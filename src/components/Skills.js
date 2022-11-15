@@ -9,6 +9,7 @@ const Skills = () => {
                 </div>
                 <p>I got skils</p>
                 <div className="3d-skills">
+                    
                 </div>
             </div>
             // 3d js, react/3/fiber

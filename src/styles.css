@@ -33,6 +33,8 @@
     font-size: 2rem;
     margin-bottom: 1rem;
     z-index: 50;
+    color: white;
+    margin: auto;
 }
 
 /* hero section */
@@ -253,7 +255,7 @@
     background-color: #fff;
     padding: .5rem;
     height:50px;
-    color: #006747;
+    color: #006747 !important;
     font-size: 2.3rem;
     text-align: center;
 }
