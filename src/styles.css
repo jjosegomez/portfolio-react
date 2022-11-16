@@ -24,7 +24,7 @@
 .titles {
     display: flex;
     justify-content: center;
-    align-items: center;
+    text-align: center;
     background-color: rgba(19, 20, 17, 0.8);
     height: 75px;
     position: sticky;
@@ -134,14 +134,11 @@
 }
 
 /* Skills styles */
-
 .skills-container {
     color: white;
     margin: auto;
-    width: 800px;
+    max-width: 800px;
 }
-
-
 
 /* project styles */
 #project-link {

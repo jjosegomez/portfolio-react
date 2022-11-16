@@ -1,5 +1,4 @@
-import React from 'react'
-import Aos from 'aos';
+import React, {useEffect} from 'react'
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
 const Project = () => {
