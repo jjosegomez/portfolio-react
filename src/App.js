@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contactme from "./components/Contactme";
-import Resume from "./components/Resume";
+import Timeline from "./components/Timeline";
 
 const App = () => {
     return (
@@ -18,7 +18,7 @@ const App = () => {
             <Skills />    
             <Projects />
             <Contactme />
-            <Resume/>
+            <Timeline/>
             <Footer />
         </div>
         </>

@@ -7,12 +7,8 @@ const Skills = () => {
                 <div className="titles">
                     <h2>Skills</h2>
                 </div>
-                <p>I got skils</p>
-                <div className="3d-skills">
-                    
-                </div>
+                <p>I got skills hire me <a href='#' className='now'>NOW!</a></p>
             </div>
-            // 3d js, react/3/fiber
         </>
     );
 }

@@ -213,6 +213,16 @@
     padding: 0;
 }
 
+.now{
+    text-decoration: none;
+    color: white;
+    transition: 1s ease-out infinite;
+}
+
+.now:hover{
+    transform: scale(10) rotate3d(270deg);
+}
+
 .pp {
     width: 25%;
     min-width: 150px;

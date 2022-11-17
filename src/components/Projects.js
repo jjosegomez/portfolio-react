@@ -15,8 +15,18 @@ const Project = () => {
 
     //we will display 5 random projects everytime the page is loaded
     display(random(key));
-
     */
+    
+    let project_list = {
+        0: [],
+        1: [],
+        2: [],
+        3: [],
+        4: [],
+        5: []
+
+    }
+
     return (
         <>  
             <div id='project-link'></div>

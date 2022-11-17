@@ -1,6 +1,6 @@
 import React from "react";
 
-const Resume = () => {
+const Timeline = () => {
     return (
         <>
             <div className="resume-container">
@@ -12,4 +12,4 @@ const Resume = () => {
     );
 }
 
-export default Resume
+export default Timeline
