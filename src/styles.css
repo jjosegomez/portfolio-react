@@ -1,6 +1,6 @@
-*{
-    margin: 0px;
+body{
     font-family: Courier, monospace;
+    background-color: rgb(19,20,17);
 }
 
 .container {
