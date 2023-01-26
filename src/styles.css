@@ -224,14 +224,13 @@ body{
 }
 
 .pp {
-    width: 25%;
-    min-width: 150px;
-    height: 80%;
+    width: 100%;
     min-height: 200px;
     max-height: 225px;
     z-index: 10;
     overflow: hidden;
     object-fit: cover;
+    border: red solid 1px;
 }
 
 .pp img {
@@ -240,7 +239,6 @@ body{
     max-width: 300px;
     min-width: 150px;
     max-height: 225px;
-    width: auto;
 }
 
 .card-text {
