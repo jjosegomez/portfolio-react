@@ -1,31 +1,40 @@
+/* Global vars declaration */
+:root{
+    --background-color:  rgb(19,20,17);
+    --font-color: antiquewhite;
+}
+
 body{
     font-family: Courier, monospace;
-    background-color: rgb(19,20,17);
+    margin:0;
+    padding: 0;
 }
 
 .container {
     margin: 0;
-    background-color: rgba(19, 20, 17, 1);
+    background-color: var(--background-color);
 }
 
-.a-tag {
-    font-weight: bold;
+a{
+    margin: 15px;
+    padding: .8rem;
     text-decoration: none;
-    color: white;
-    font-size: 1.1rem;
-    transition: 0.3s;
+    color: var(--font-color);
+    transition: 1s;
+    border-radius: 10%;
 }
 
-.a-tag:hover {
-    text-decoration: underline;
-    font-weight: bolder;
+a:hover{
+    font-weight: 800;
+    transform: scale(2);
+    background-color: beige;
 }
 
 .titles {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: rgba(19, 20, 17, 0.8);
+    /* background-color: rgba(19, 20, 17, 0.8); */
     height: 75px;
     position: sticky;
     top: 0px;
@@ -79,33 +88,36 @@ body{
 }
 
 /* navbar styles */
-.navbar-container {
-    background-color: rgba(19, 20, 17, .8);
-    height: 60px;
-    border-bottom: white solid 1px;
-    z-index: 100;
-    transition: 1s;
-}
-
-.nav-links {
-    margin: auto;
-    font-size: 20px;
-    max-width: 700px;
+.navbar {
     display: flex;
-    justify-content: center;
+    border: red 1px solid;
+    background-color: gray;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
 }
 
-.nav-links a {
-    margin: .75rem auto;
-    text-decoration: none;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    z-index: 10;
+.website-title{
+    margin: 20px;
+    font-size: 1.5rem;
 }
 
-.nav-links a:hover {
-    transform: rotate(-5deg) scale(1.3);
+.hamburguer-menu{
+    position: relative;
+    top:20%;
+    right: -5%;
+    background-color: yellow;
+    height: 80%;
+    z-index: 100;
+}
+
+.hamburguer-icon {
+    display: flex;
+    flex-flow: column;
+    background-color: blue;
+    width: 60px;
+    height: 60px;
 }
 
 /* about me styles */
@@ -233,13 +245,7 @@ body{
     border: red solid 1px;
 }
 
-.pp img {
-    position: relative;
-    left: -45px;
-    max-width: 300px;
-    min-width: 150px;
-    max-height: 225px;
-}
+
 
 .card-text {
     max-height: 225px;

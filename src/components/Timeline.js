@@ -6,6 +6,7 @@ const Timeline = () => {
             <div className="resume-container">
                 <div className="titles">
                     <h2>Timeline</h2>
+                    <p>Work in progress...</p>
                 </div>
             </div>
         </>
