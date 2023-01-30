@@ -18,16 +18,20 @@ const Navbar = () => {
                 <a href="#">Skills</a>
                 <a href="#">Contact me</a>
                 <a href="#">Timeline</a> 
+            </div> 
+            <div className='burger-menu'>
+                <div className="burger-icon" onClick={navbarActive}>
+                    <div className="burger-line-1"></div>
+                    <div className="burger-line-2"></div>
+                </div>
+            </div> 
+            <div className='dropdown-menu'>
+                <a href="#">About me</a>
+                <a href="#">Projects</a>
+                <a href="#">Skills</a>
+                <a href="#">Contact me</a>
+                <a href="#">Timeline</a> 
             </div>
-            <div className='hamburger-menu'>
-                <a onClick={navbarActive}>
-                    <div className="hamburger-icon" onClick={navbarActive}>
-                        <div className='hamburger-lines'></div>
-                        <div className='hamburger-lines'></div>
-                    </div>
-                </a>
-            </div>
-               
         </nav>
     )
 }
