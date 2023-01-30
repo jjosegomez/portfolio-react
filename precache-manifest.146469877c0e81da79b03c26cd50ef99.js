@@ -32,7 +32,7 @@ self.__precacheManifest = [
     "url": "/porfolio-react/static/media/pp.0e96436b.jpeg"
   },
   {
-    "revision": "6a2ccf6bd422cf85427a168a3a3f9557",
+    "revision": "106e69df725c45584f7ee86667c111bf",
     "url": "/porfolio-react/index.html"
   }
 ];
