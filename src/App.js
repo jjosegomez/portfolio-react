@@ -11,8 +11,8 @@ import Timeline from "./components/Timeline";
 const App = () => {
     return (
         <>
-        <div className="container">
-            <Navbar />
+        <Navbar />
+        <div className="app">
             <div className="invisible">
                 <Main />
                 <Aboutme/>
