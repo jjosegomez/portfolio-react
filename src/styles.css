@@ -63,6 +63,7 @@ a:hover{
 
 .nav-links{
     margin: auto 2rem;
+    animation: ease-in-out 0.5s;
 }
 /* BURGER STYLES */
 .burger-menu {
@@ -141,6 +142,7 @@ a:hover{
     background-color: rgb(23, 23, 23);
     visibility: visible;
     transition: 0.5s;
+    z-index: 50;
 }
 
 /* dropdown menu links */
@@ -149,16 +151,6 @@ a:hover{
     text-align: center;
     display: block;
 }
-
-/* in order for media query to work you need to write it after the styles you will be changing */
-@media screen and (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
-    .burger-menu {
-        display: block;
-    }
-  }
 
   /* hides menu when user switches to landscape */
   @media screen and (min-width: 768px) {
@@ -184,7 +176,7 @@ a:hover{
 .hero-card{
     color: var(--font-color);
     background-color: var(--background-color);
-    opacity: .8;
+    opacity: .7;
     padding: 2rem;
     display: flex;
     flex-flow: column nowrap;
@@ -198,6 +190,7 @@ a:hover{
     display: block;
     max-width: 200px;
     border-radius: 50%;
+    margin: 1rem auto;
     border: 1rem var(--font-color) solid;
 }
 
@@ -221,7 +214,7 @@ a:hover{
 #aboutme-link {
     position: relative;
     top: -5px;
-    transition: 0.5s;
+    animation: ease-in-out .5s;
 }
 
 .aboutme-container {
@@ -403,3 +396,18 @@ a:hover{
 } */
 
 
+/* in order for media query to work you need to write it after the styles you will be changing */
+@media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .hero-card {
+        background-color: transparent;
+    }
+    .hero-card img{
+        margin-bottom: 3rem;
+    }
+  }
