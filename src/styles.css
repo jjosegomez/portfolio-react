@@ -170,21 +170,59 @@ a:hover{
 /* hero section */
 .hero-container {
     background-image:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.7)),url("https://picsum.photos/200/300");
-    display:flex;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 80vh;
+    display:flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
 }
 
+.hero-card{
+    color: var(--font-color);
+    background-color: var(--background-color);
+    opacity: .8;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 2.5%;
+}
+
+.hero-card img {
+    display: block;
+    max-width: 200px;
+    border-radius: 50%;
+    border: 1rem var(--font-color) solid;
+}
+
+.card-text{
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 45%;
+}
+
+.card-text h4{
+    font-size: 1.5rem;
+}
+
+#my-name {
+    margin: 0;
+    font-size: 4rem;
+}
 /* about me styles */
 #aboutme-link {
     position: relative;
     top: -5px;
     transition: 0.5s;
 }
-
 
 .aboutme-container {
     background-color: transparent;
