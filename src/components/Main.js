@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import Aos from 'aos';
+import Aos from 'aos'
 import pp from "./assets/pp.jpeg"
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css' // You can also use <link> for styles
 
 const Main = () => {
     return (

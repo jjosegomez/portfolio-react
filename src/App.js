@@ -7,10 +7,12 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contactme from "./components/Contactme";
 import Timeline from "./components/Timeline";
+import Popup from "./components/InProgressPopup";
 
 const App = () => {
     return (
         <>
+        <Popup/>
         <Navbar />
         <div className="app">
             <div className="invisible">
