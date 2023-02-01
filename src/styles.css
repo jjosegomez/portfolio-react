@@ -1,7 +1,12 @@
 /* Global vars declaration */
 :root{
-    --background-color:  rgb(19,20,17);
-    --font-color: antiquewhite;
+    --black-palette: rgb(30,33,36);
+    --white-palette: rgb(255,255,255);
+    --darkgray-palette: rgb(40,43,48);
+    --gray-palette: rgb(54,57,62);
+    --lightgray-palette: rgb(66,69,73);
+    --discord-palette: 	rgb(89,106,234);
+    --darkdiscord-palette: rgb(64,84,228);
     --font-family: 'Noto Sans', sans-serif;
 }
 
@@ -9,7 +14,12 @@ body{
     font-family: var(--font-family);
     margin:0;
     padding: 0;
-    background-color: var(--background-color);
+    background-color: var(--black-palette);
+    color: var(--black-palette)
+}
+
+.titles{
+    font-size: 1.75rem;
 }
 
 .visible {
@@ -22,43 +32,43 @@ body{
 
 .app{
     margin: 0;
-    background-color: var(--background-color);
+    background-color: var(--white-palette);
     padding: 0;
 }
 
 .container{
-    background-color: var(--background-color);
+    background-color: var(--black-palette);
     margin: 0 1rem;
 }
 
 a{
     padding: .8rem;
     text-decoration: none;
-    color: var(--font-color);
+    color: var(--white-palette);
     transition: .5s;
     border-radius: 10%;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 a:hover{
-    color: white;
-    font-weight: 800;
+    text-decoration: underline;
 }
 
 /* navbar styles */
 .navbar {
     display: flex;
-    flex-flow: row wrap;
-    background-color: rgb(32, 32, 32);
+    flex-flow: row nowrap;
+    background-color: var(--darkdiscord-palette);
     align-items: center;
     justify-content: space-between;
     height: 80px;
+    color: var(--white-palette);
 }
 
 .website-title{
     margin: auto 2.5rem;
     font-size: 1.5rem;
-    color: var(--font-color);
+    color: var(--white-palette);
 }
 
 .nav-links{
@@ -67,7 +77,7 @@ a:hover{
 }
 /* BURGER STYLES */
 .burger-menu {
-    background-color: rgba(23,23,23,1);
+    background-color: var(--darkgray-palette);
     position: absolute;
     top: 10px;
     right: 10px;
@@ -84,13 +94,14 @@ a:hover{
     flex-flow: column;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(23, 23, 23);
+    background-color: var(--darkdiscord-palette);
     width: 100%;
     height: 100%;
     transition: .5s;
 }
 
 .clicked{
+    background-color: var(--darkgray-palette);
     transform: translateX(.75rem);
 }
 
@@ -112,7 +123,7 @@ a:hover{
 .burger-line-1, .burger-line-2{
     width: 80%;
     height: 10%;
-    background-color: #fff;
+    background-color: var(--white-palette);
     transition: .5s;
 }
 
@@ -124,7 +135,7 @@ a:hover{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-color: var(--font-color);
+    background-color: var(--discord-palette);
     z-index: 50;
     visibility: visible;
     transition: 0.5s;
@@ -139,7 +150,7 @@ a:hover{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(23, 23, 23);
+    background-color: var(--black-palette);
     visibility: visible;
     transition: 0.5s;
     z-index: 50;
@@ -161,22 +172,23 @@ a:hover{
 
 /* hero section */
 .hero-container {
-    background-image:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.7)),url("https://picsum.photos/200/300");
+    /* background-image:linear-gradient(rgba(0,0,0,.9),rgba(0,0,0,.7)),url("https://picsum.photos/200/300");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: var(--darkdiscord-palette);
     display:flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height:70vh;
+
 }
 
 .hero-card{
-    color: var(--font-color);
-    background-color: var(--background-color);
-    opacity: .7;
+    color: var(--white-palette);
+    background-color: var(--discord-palette);
     padding: 2rem;
     display: flex;
     flex-flow: column nowrap;
@@ -191,7 +203,7 @@ a:hover{
     max-width: 200px;
     border-radius: 50%;
     margin: 1rem auto;
-    border: 1rem var(--font-color) solid;
+    border: 1rem var(--white-palette) solid;
 }
 
 .card-text{
@@ -210,6 +222,7 @@ a:hover{
     margin: 0;
     font-size: 4rem;
 }
+
 /* about me styles */
 #aboutme-link {
     position: relative;
@@ -218,9 +231,7 @@ a:hover{
 }
 
 .aboutme-container {
-    background-color: transparent;
     margin: 5rem auto;
-    color: white;
     max-width: 800px;
 }
 
@@ -238,7 +249,6 @@ a:hover{
 
 /* Skills styles */
 .skills-container {
-    color: white;
     margin: auto;
     max-width: 800px;
 }
@@ -251,7 +261,6 @@ a:hover{
 
 .project-container {
     margin: auto;
-    color: white;
     max-width: 800px;
 }
 
@@ -303,6 +312,7 @@ a:hover{
 }
 
 .card {
+    border: #006747 2px solid;
     margin: 3rem auto;
     border-radius: 25px;
     min-height: 250px;
@@ -319,7 +329,6 @@ a:hover{
 
 .now{
     text-decoration: none;
-    color: white;
     transition: 1s ease-out infinite;
 }
 
@@ -365,6 +374,7 @@ a:hover{
 
 /* footer styles */
 .footer-container {
+    background: var(--lightgray-palette);
     border-top: 1px solid white;
     padding: 2rem;
     margin-top: 55px;

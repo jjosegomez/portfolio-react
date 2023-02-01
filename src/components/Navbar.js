@@ -26,11 +26,11 @@ const Navbar = () => {
         <nav className="navbar">
             <div className='website-title'>Juan's Portfolio</div>
             <div className="nav-links">
-                <a href="#aboutme-link">About me</a>
-                <a href="#">Projects</a>
-                <a href="#">Skills</a>
-                <a href="#">Contact me</a>
-                <a href="#">Timeline</a> 
+                <a href="#aboutme-link">About</a>
+                <a href="#project-link">Projects</a>
+                <a href="#skills-link">Skills</a>
+                <a href="#contactme-link">Contact</a>
+                <a href="#timeline-link">Timeline</a> 
             </div> 
             <div className="burger-menu" onClick={navbarActive}>
                 <div className={burgerClass}>
@@ -39,10 +39,10 @@ const Navbar = () => {
                 </div>
             </div> 
             <div className={menuClass}>
-                <a href="#aboutme-link">About me</a>
-                <a href="#">Projects</a>
-                <a href="#">Skills</a>
-                <a href="#">Contact me</a>
+                <a href="#aboutme-link">About</a>
+                <a href="#projects-link">Projects</a>
+                <a href="#skills-link">Skills</a>
+                <a href="#contact-link">Contact</a>
                 <a href="#">Timeline</a> 
             </div>
         </nav>
