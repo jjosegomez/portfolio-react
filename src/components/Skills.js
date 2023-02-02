@@ -10,7 +10,10 @@ const Skills = () => {
                     </div>
                     <div className='skills'>
                         <div className='programming-languages'>
-                            <img></img>
+                            <img src='https://picsum.photos/200'></img>
+                            <img src='https://picsum.photos/200'></img>
+                            <img src='https://picsum.photos/200'></img>
+                            <img src='https://picsum.photos/200'></img>
                         </div>
                     </div>
                 </section>
