@@ -4,12 +4,16 @@ const Skills = () => {
     return (
         <>  
             <div className='white-bg-1'>
-                <div className="skills-container">
+                <section data-aos="fade-up" className="skills-container">
                     <div className="titles">
-                        <h2>Skills</h2>
+                        <h1>Skills</h1>
                     </div>
-                    <p>I got skills hire me <a href='#' className='now'>NOW!</a></p>
-                </div>
+                    <div className='skills'>
+                        <div className='programming-languages'>
+                            <img></img>
+                        </div>
+                    </div>
+                </section>
             </div>
         </>
     );

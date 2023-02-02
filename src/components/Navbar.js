@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import Resume from "./assets/Resume-JuanJGomez.pdf"
 
 const Navbar = () => {
 
@@ -27,10 +28,10 @@ const Navbar = () => {
             <div className='website-title'>Juan's Portfolio</div>
             <div className="nav-links">
                 <a href="#aboutme-link">About</a>
-                <a href="#project-link">Projects</a>
                 <a href="#skills-link">Skills</a>
+                <a href="#project-link">Projects</a>
                 <a href="#contactme-link">Contact</a>
-                <a href="#timeline-link">Timeline</a> 
+                <a href='https://docs.google.com/document/d/15y8WjMemOgtyr0a_k3m7XbYCRfn3nco4/edit?usp=sharing&ouid=105120769955975660889&rtpof=true&sd=true' target="_blank">Resume</a>
             </div> 
             <div className="burger-menu" onClick={navbarActive}>
                 <div className={burgerClass}>
@@ -43,7 +44,7 @@ const Navbar = () => {
                 <a href="#projects-link">Projects</a>
                 <a href="#skills-link">Skills</a>
                 <a href="#contact-link">Contact</a>
-                <a href="#">Timeline</a> 
+                <a href="https://docs.google.com/document/d/15y8WjMemOgtyr0a_k3m7XbYCRfn3nco4/edit?usp=sharing&ouid=105120769955975660889&rtpof=true&sd=true" target="_blank">Resume</a>
             </div>
         </nav>
     )

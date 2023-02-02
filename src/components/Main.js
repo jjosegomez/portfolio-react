@@ -6,7 +6,6 @@ import 'aos/dist/aos.css' // You can also use <link> for styles
 const Main = () => {
     return (
         <section className="hero-container">
-            <div class="cloud sm"></div>
             <div className='hero-card'>
                 <img src={pp}></img>
                 <label className='card-text'>

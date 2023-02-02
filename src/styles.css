@@ -72,6 +72,14 @@ a:hover{
 
 /* --------------- popup styles ------------- */
 
+.bg-opacity{
+    position: absolute;
+    background-color: rgba(0,0,0,.5);
+    z-index: 90;
+    width: 100%;
+    height: 100%;
+}
+
 .active-popup {
     background-color: var(--darkgray-palette);
     position: absolute;
@@ -289,22 +297,22 @@ a:hover{
 .aboutme-container {
     margin: auto;
     max-width: 1000px;
-    padding: 0 2rem;
+    padding-bottom: 7.5rem;
 }
 
 .about-text-container {
-    margin: auto;
+    margin: 2em auto;
     width: 100%;
     display: flex;
     flex-flow: wrap;
-    padding: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-text{
-    max-width: 500px;
+    margin: 2.5rem;
+    max-width: 450px;
     overflow: hidden;
-    margin: 2rem;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.25rem;
@@ -312,14 +320,11 @@ a:hover{
 
 .about-img{
     max-width: 500px;
-    min-width: 250px;
     max-height: 300px;
     overflow: hidden;
-    margin: 2rem;
+    margin: auto;
     border-radius: 8px;
     box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008;
-    height: auto;
-    max-width: 100%;
 }
 
 .about-img img{
@@ -330,14 +335,28 @@ a:hover{
     max-width: 800px;
 }
 
+.reverse-flex{
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row-reverse wrap;
+}
+
 /* Skills styles */
 
 .skills-container{
-    border: red 2px solid;
     margin: auto;
     max-width: 1000px;
     padding: 0 2rem;
+    padding-bottom: 7.5rem;
     background-color: var(--white-palette)
+}
+
+.skills{
+    display: flex;
+    border: yellow 2px solid;
 }
 
 /* project styles */

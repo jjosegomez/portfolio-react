@@ -19,7 +19,6 @@ const App = () => {
                 <Main />
                 <Aboutme/>
                 <Skills/>
-                <Timeline/>
                 <Projects/>
                 <Contactme/>
                 <Footer/>
