@@ -2,11 +2,10 @@ import React from "react"
 import Navbar from "./components/Navbar"
 import Main from "./components/Main";
 import Aboutme from "./components/Aboutme";
-import Skills from "./components/Skills";
+import Skills from "./components/skills/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Contactme from "./components/Contactme";
-import Timeline from "./components/Timeline";
 import Popup from "./components/InProgressPopup";
 
 const App = () => {
@@ -15,14 +14,12 @@ const App = () => {
         <Popup/>
         <Navbar />
         <div className="app">
-            <div className="invisible">
-                <Main />
-                <Aboutme/>
-                <Skills/>
-                <Projects/>
-                <Contactme/>
-                <Footer/>
-            </div>
+            <Main />
+            <Aboutme/>
+            <Skills/>
+            <Projects/>
+            <Contactme/>
+            <Footer/>
         </div>
         </>
     );

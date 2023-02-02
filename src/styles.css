@@ -351,13 +351,50 @@ a:hover{
     max-width: 1000px;
     padding: 0 2rem;
     padding-bottom: 7.5rem;
-    background-color: var(--white-palette)
+    background-color: var(--white-palette-1)
 }
 
 .skills{
     display: flex;
     border: yellow 2px solid;
 }
+
+
+.programming-languages {
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: green solid 2px;
+}
+
+.lang {
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-width: 200px;
+    display: block;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008;
+    transition: .5s;
+}
+
+.lang-show {
+    transform: scale(2);
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+    max-width: 200px;
+    display: block;
+    margin: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008;
+    transition: .5s;
+}
+
+
 
 /* project styles */
 #project-link {
@@ -366,8 +403,11 @@ a:hover{
 }
 
 .project-container{
+    margin: auto;
+    max-width: 1000px;
     padding: 0 2rem;
-    background-color: var(--white-palette)
+    padding-bottom: 7.5rem;
+    background-color: var(--white-palette-2)
 }
 
 .project-items-container {
