@@ -4,7 +4,17 @@ import SkillItem from './SkillItem';
 
 const Skills = () => {
 
-    const [isClicked, setIsClicked] = useState(true)
+    const [popupVisible, setPopupVisible] = useState("visible")
+
+    const popup = () => {
+        if (popupVisible === "visible"){
+            setPopupVisible("hidden")
+        }
+        else{
+            setPopupVisible("visible")
+        }
+        console.log(popupVisible)
+    }
 
     return (
         <div className='white-bg-1'>
@@ -13,9 +23,9 @@ const Skills = () => {
                     <h1>Skills</h1>
                 </div>
                 <div className='skills'>
+                <p>Click on the skills below for more details!</p>
                     <div className='programming-languages'>
-                        {/* causing re-render error check for infinite loops
-                        <SkillItem image="https://picsum.photos/200"/> */}
+                        <a onClick={popup}><SkillItem img="https://picsum.photos/200"/></a>
                     </div>
                 </div>
             </section>

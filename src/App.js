@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar"
 import Main from "./components/Main";
 import Aboutme from "./components/Aboutme";
 import Skills from "./components/skills/Skills";
-import Projects from "./components/Projects";
+import Projects from "./components/projects/Projects";
 import Footer from "./components/Footer";
 import Contactme from "./components/Contactme";
 import Popup from "./components/InProgressPopup";

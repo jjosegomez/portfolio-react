@@ -21,7 +21,8 @@ body{
     margin:0;
     padding: 0;
     background-color: var(--black-palette);
-    color: var(--black-palette)
+    color: var(--black-palette);
+    font-size: 1.25rem;
 }
 
 .titles{
@@ -180,12 +181,12 @@ a:hover{
 }
 
 .clicked > .burger-line-1{
-    transform: rotate(45deg) translateY(1em);
+    transform: rotate(45deg) translateY(0.8em);
     animation: ease-in-out 0.5s;
 }
 
 .clicked > .burger-line-2 {
-    transform: rotate(-45deg) translateY(-1em);
+    transform: rotate(-45deg) translateY(-.8em);
     animation: ease-in-out 0.5s;
 }
 
@@ -200,7 +201,7 @@ a:hover{
     width: 100%;
     position: absolute;
     display: flex;
-    top: -15rem;
+    top: -18rem;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
@@ -215,7 +216,7 @@ a:hover{
     position: absolute;
     display: flex;
     top: 0;
-    padding-top: 1rem;
+    padding: 1rem 0 1rem;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
@@ -246,7 +247,7 @@ a:hover{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    height:80vh;
+    min-height:80vh;
 }
 
 .hero-card{
@@ -272,7 +273,7 @@ a:hover{
     display:flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: space-between;
     height: 45%;
     color: var(--white-palette) !important;
 }
@@ -282,7 +283,7 @@ a:hover{
 }
 
 #my-name {
-    margin: 0;
+    margin-bottom: 2rem;
     font-size: 4rem;
 }
 
@@ -355,13 +356,17 @@ a:hover{
 }
 
 .skills{
-    display: flex;
+    margin: 2rem;
     border: yellow 2px solid;
+}
+
+.skills p{
+    display: block;
 }
 
 
 .programming-languages {
-    margin: auto;
+    margin: .5rem auto 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -369,7 +374,7 @@ a:hover{
     border: green solid 2px;
 }
 
-.lang {
+.skill-item {
     min-width: 100px;
     max-width: 200px;
     min-height: 100px;
@@ -381,19 +386,13 @@ a:hover{
     transition: .5s;
 }
 
-.lang-show {
-    transform: scale(2);
-    min-width: 100px;
-    max-width: 200px;
-    min-height: 100px;
-    max-width: 200px;
-    display: block;
-    margin: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008;
-    transition: .5s;
+.skill-item img{
+    width: 100%;
 }
 
+.skill-item:hover {
+    cursor: pointer;
+}
 
 
 /* project styles */
