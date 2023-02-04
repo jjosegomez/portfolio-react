@@ -16,7 +16,7 @@ const Popup = () => {
     }
 
     return(
-        <div className={active}>
+        <div className={active} onClick={closePopup}>
             <div className="active-popup">
                 <figure>
                     <img src={workInProgress}></img>
