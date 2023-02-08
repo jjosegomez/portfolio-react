@@ -18,7 +18,7 @@ const Popup = ({ skill }) => {
                     backgroundImage: `linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.99)),  url(${skill.image})`,
                     backgroundRepeat: `no-repeat`,
                     backgroundSize: `cover`,
-                    backgroundPosition: `center`,
+                    backgroundPosition: `center`
                 }}>
                     <div className='skill-popup-content'>
                         <h2>{skill.name}</h2>

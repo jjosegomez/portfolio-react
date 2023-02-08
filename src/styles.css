@@ -87,11 +87,9 @@ a:hover{
 
 .active-popup {
     background-color: var(--darkgray-palette);
-    position: absolute;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
+    position: fixed;
+    bottom: 50%;
+    /* transform: translate(-50%,-50%); */
     display: flex;
     flex-flow: column nowrap;
     max-width: 500px;
@@ -398,7 +396,6 @@ a:hover{
 }
 
 .skill-popup {
-    background-color: var(--lightgray-palette);
     position: fixed;
     width: 80vw;
     height: 80vh;
