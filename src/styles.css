@@ -25,6 +25,10 @@ body{
     font-size: 1.25rem;
 }
 
+img{
+    width: 100%;
+}
+
 .titles{
     text-align: center;
     padding: 5rem 0 1.5rem;
@@ -357,7 +361,6 @@ a:hover{
 
 .skills{
     margin: 2rem;
-    border: yellow 2px solid;
 }
 
 .skills p{
@@ -368,10 +371,10 @@ a:hover{
 .programming-languages {
     margin: .5rem auto 0;
     display: flex;
+    max-width: 650px;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    border: green solid 2px;
 }
 
 .skill-item {
@@ -394,6 +397,37 @@ a:hover{
     cursor: pointer;
 }
 
+.skill-popup {
+    background-color: var(--lightgray-palette);
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    box-shadow: 0 13px 27px -5px #32325d40, 0 8px 16px -8px #0000004d, 0 -6px 16px -6px #00000008;
+    transition: .5s;
+    z-index: 200;
+}
+
+.skill-popup-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1000;
+}
+
+.skill-popup-content h2, .skill-popup-content p, .skill-popup-content button{
+    display: block;
+}
+
+.skill-popup-content h2 {
+    color: var(--darkdiscord-palette);
+}
 
 /* project styles */
 #project-link {
@@ -560,4 +594,26 @@ a:hover{
     .hero-card img{
         margin-bottom: 3rem;
     }
+  }
+
+
+
+  .popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    border: none;
+    background-color: lightgray;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
   }
