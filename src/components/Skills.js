@@ -76,14 +76,14 @@ const Skills = () => {
                             <a className='skill-item'>
                                 <Skill
                                     name="SQL Database Design"
-                                    image={gitLogo}
+                                    image={sqlLogo}
                                     description="Used as Database for websites. I have used the postgres open-source tool for database management. currently enrroled in a database design course."
                                 />
                             </a>
                             <a className='skill-item'>
                                 <Skill
                                     name="Git/GitHub"
-                                    image={sqlLogo}
+                                    image={gitLogo}
                                     description="Used for version control, website hosting, and collaboration. I'm currently active in two organizations."
                                 />
                             </a>
