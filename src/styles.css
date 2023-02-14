@@ -397,8 +397,10 @@ a:hover{
 
 .skill-popup {
     position: fixed;
-    width: 80vw;
-    height: 80vh;
+    width: 60vw;
+    height: 70vh;
+    min-height: 300px;
+    min-width: 400px;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -416,6 +418,7 @@ a:hover{
     align-items: center;
     justify-content: space-around;
     z-index: 1000;
+    text-align: center;
 }
 
 .skill-popup-content h2, .skill-popup-content p, .skill-popup-content button{
@@ -424,6 +427,11 @@ a:hover{
 
 .skill-popup-content h2 {
     color: var(--darkdiscord-palette);
+}
+
+.skill-popup-content p{
+    max-width: 500px;
+    margin: 1rem;
 }
 
 /* project styles */
