@@ -369,7 +369,7 @@ a:hover{
 .programming-languages {
     margin: .5rem auto 0;
     display: flex;
-    max-width: 650px;
+    max-width: 850px;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
@@ -389,6 +389,7 @@ a:hover{
 
 .skill-item img{
     width: 100%;
+    border-radius: 8px;
 }
 
 .skill-item:hover {

@@ -4,6 +4,8 @@ import cppLogo from "./assets/skills-assets/cpp-logo.png"
 import pythonLogo from "./assets/skills-assets/python-logo.png"
 import swiftLogo from "./assets/skills-assets/swift-logo.png"
 import webLogo from "./assets/skills-assets/web-logo.png"
+import gitLogo from "./assets/skills-assets/GitHub-logo.png"
+import sqlLogo from "./assets/skills-assets/postgreSql-logo.png"
 
 const Popup = ({ skill }) => {
     const [showPopup, setShowPopup] = useState(false);
@@ -13,7 +15,7 @@ const Popup = ({ skill }) => {
             <img src={skill.image} onClick={() => setShowPopup(true)} />
             {showPopup && (
                 <div className="skill-popup" style={{
-                    backgroundImage: `linear-gradient(rgba(40,43,48,.8), rgba(30,33,36,.99)),  url(${skill.image})`,
+                    backgroundImage: `linear-gradient(rgba(30,33,36,.8), rgba(3,3,6,.99)),  url(${skill.image})`,
                     backgroundRepeat: `no-repeat`,
                     backgroundSize: `cover`,
                     backgroundPosition: `center`
@@ -68,7 +70,21 @@ const Skills = () => {
                                 <Skill
                                     name="Web Dev"
                                     image={webLogo}
-                                    description="These are the core technologies used for building websites and web applications. HTML to define the structure and content of web pages, CSS to specify the layout and styling, and JavaScript to add interactivity and dynamic behavior to web pages. I am currently learning React JS, However I have experience using vanilla JavaScript and other technologies like WordPress and Bootstrap"
+                                    description="Used HTML to define the structure and content of web pages, CSS to specify the layout and styling, and JavaScript to add interactivity and dynamic behavior to web pages. I am currently learning React JS, However I have experience using vanilla JavaScript and other technologies like WordPress and Bootstrap."
+                                />
+                            </a>
+                            <a className='skill-item'>
+                                <Skill
+                                    name="SQL Database Design"
+                                    image={gitLogo}
+                                    description="Used as Database for websites. I have used the postgres open-source tool for database management. currently enrroled in a database design course."
+                                />
+                            </a>
+                            <a className='skill-item'>
+                                <Skill
+                                    name="Git/GitHub"
+                                    image={sqlLogo}
+                                    description="Used for version control, website hosting, and collaboration. I'm currently active in two organizations."
                                 />
                             </a>
                         </div>
