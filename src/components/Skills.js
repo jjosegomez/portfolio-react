@@ -46,11 +46,11 @@ const Skills = () => {
                     <div className='skills'>
                         <div className='programming-languages'>
                             <a className='skill-item'>
-                            <Skill
-                                name="C++"
-                                image={cppLogo}
-                                description="I have used C++ to develop high-performing algorithms and designing data structures. Used for Object Oriented Programming and Cryptographic Encryption"
-                            />
+                                <Skill
+                                    name="Web Dev"
+                                    image={webLogo}
+                                    description="Used HTML to define the structure and content of web pages, CSS to specify the layout and styling, and JavaScript to add interactivity and dynamic behavior to web pages. I am currently learning React JS, However I have experience using vanilla JavaScript and other technologies like WordPress and Bootstrap."
+                                />
                             </a>
                             <a className='skill-item'>
                             <Skill
@@ -60,17 +60,17 @@ const Skills = () => {
                             />
                             </a>
                             <a className='skill-item'>
+                            <Skill
+                                name="C++"
+                                image={cppLogo}
+                                description="I have used C++ to develop high-performing algorithms and designing data structures. Used for Object Oriented Programming and Cryptographic Encryption"
+                            />
+                            </a>
+                            <a className='skill-item'>
                                 <Skill
                                     name="iOS Dev"
                                     image={swiftLogo}
                                     description=" This is a programming language developed by Apple for building software for their platforms, such as macOS, iOS, and watchOS. I have developed a couple of mobile applications using this technology."
-                                />
-                            </a>
-                            <a className='skill-item'>
-                                <Skill
-                                    name="Web Dev"
-                                    image={webLogo}
-                                    description="Used HTML to define the structure and content of web pages, CSS to specify the layout and styling, and JavaScript to add interactivity and dynamic behavior to web pages. I am currently learning React JS, However I have experience using vanilla JavaScript and other technologies like WordPress and Bootstrap."
                                 />
                             </a>
                             <a className='skill-item'>
