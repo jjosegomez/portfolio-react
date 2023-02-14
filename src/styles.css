@@ -88,8 +88,9 @@ a:hover{
 .active-popup {
     background-color: var(--darkgray-palette);
     position: fixed;
-    bottom: 50%;
-    /* transform: translate(-50%,-50%); */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
     display: flex;
     flex-flow: column nowrap;
     max-width: 500px;
@@ -107,8 +108,7 @@ a:hover{
 }
 
 .active-popup a{
-    position: absolute;
-    left: 45%;
+    position: relative;
     padding: 1.5rem auto;
     bottom: 2rem;
     background-color: var(--white-palette);
@@ -579,6 +579,7 @@ a:hover{
 
 /* in order for media query to work you need to write it after the styles you will be changing */
 @media screen and (max-width: 768px) {
+    
     .nav-links {
       display: none;
     }
