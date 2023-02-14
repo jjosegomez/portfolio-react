@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.60d0ea8f.css",
-    "main.js": "/portfolio-react/static/js/main.c000c81a.js",
+    "main.js": "/portfolio-react/static/js/main.f37e1256.js",
     "static/media/cpp-logo.png": "/portfolio-react/static/media/cpp-logo.b827def6ce8a52c9cef7.png",
     "static/media/web-logo.png": "/portfolio-react/static/media/web-logo.c02b42480a1f7c52c296.png",
     "static/media/Resume-JuanJGomez.pdf": "/portfolio-react/static/media/Resume-JuanJGomez.0e0ec73bb17f343a8db9.pdf",
@@ -13,10 +13,10 @@
     "static/media/white-usf-logo.svg": "/portfolio-react/static/media/white-usf-logo.1c3d4c9f08275883fd759ce7347bb674.svg",
     "index.html": "/portfolio-react/index.html",
     "main.60d0ea8f.css.map": "/portfolio-react/static/css/main.60d0ea8f.css.map",
-    "main.c000c81a.js.map": "/portfolio-react/static/js/main.c000c81a.js.map"
+    "main.f37e1256.js.map": "/portfolio-react/static/js/main.f37e1256.js.map"
   },
   "entrypoints": [
     "static/css/main.60d0ea8f.css",
-    "static/js/main.c000c81a.js"
+    "static/js/main.f37e1256.js"
   ]
 }
