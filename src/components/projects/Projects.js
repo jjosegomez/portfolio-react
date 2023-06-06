@@ -1,22 +1,7 @@
 import React from 'react';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
-
-const Project = () => {
-
-    /*
-    make a dictionary where the keys are numbers. every element is an array with media corresponding to each project.
-    projects = { 
-        1: [project_name, link, picture, label]
-        2: [project_name, link, picture, label]
-        3: [project_name, link, picture, label]
-        4: [project_name, link, picture, label]
-        5: [project_name, link, picture, label]
-    }
-
-    //we will display 5 random projects everytime the page is loaded
-    display(random(key));
-    */
+const Project = (props) => {
 
     return (
         <>  
@@ -44,6 +29,7 @@ const Project = () => {
                         </div>
                     </div>
                 </section>
+                {props.data}
             </div>
         </>
     );
