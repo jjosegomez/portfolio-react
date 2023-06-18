@@ -13,19 +13,19 @@ import {useState, useEffect} from 'react';
 const App = () => {
     const [projects, setProjects] = useState(null)
     
-    // useEffect (() => {
-    //     const fetchData = async () => {
-    //         try{
-    //             const response = await axios.get("http://localhost:5000/api/projects")
-    //             setProjects(response.data)
-    //             console.log(projects)
-    //         }catch(error){
-    //             console.error(`Error while getting projects ${error}`)
-    //         }
-    //     }
-    //     fetchData()
+    useEffect (() => {
+        const fetchData = async () => {
+            try{
+                const response = await axios.get("http://localhost:5000/api/projects")
+                setProjects(response.data)
+                console.log(`${response} \nThis is the data the API os returning`)
+            }catch(error){
+                console.error(`Error while getting projects ${error}`)
+            }
+        }
+        fetchData()
         
-    // }, [])
+    }, [])
     return (
         <>
         {/* <Popup/> */}
