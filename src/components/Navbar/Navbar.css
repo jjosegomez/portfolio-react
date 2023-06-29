@@ -1,0 +1,125 @@
+/* ------------- navbar styles ------------ */
+.navbar {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: var(--darkdiscord-palette);
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    color: var(--white-palette);
+}
+
+.website-title{
+    margin: auto 2.5rem;
+    font-size: 1.5rem;
+    color: var(--white-palette);
+}
+
+.nav-links{
+    margin: auto 2rem;
+    animation: ease-in-out 0.5s;
+}
+/* ----------- BURGER STYLES --------- */
+.burger-menu {
+    background-color: var(--darkgray-palette);
+    position: absolute;
+    top: 10px;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 15%;
+    overflow:hidden;
+    display: none;
+    z-index: 100;
+}
+
+.burger-icon{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--darkdiscord-palette);
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.clicked{
+    background-color: var(--darkgray-palette);
+    transform: translateX(.75rem);
+}
+
+.unclicked > .burger-line-1, .unclicked > .burger-line-2{
+    transform: rotate(0) translateY(0em) translateX(0em);
+    animation: ease-in-out 0.5s;
+}
+
+.clicked > .burger-line-1{
+    transform: rotate(45deg) translateY(0.8em);
+    animation: ease-in-out 0.5s;
+}
+
+.clicked > .burger-line-2 {
+    transform: rotate(-45deg) translateY(-.8em);
+    animation: ease-in-out 0.5s;
+}
+
+.burger-line-1, .burger-line-2{
+    width: 80%;
+    height: 10%;
+    background-color: var(--white-palette);
+    transition: .5s;
+}
+
+.menu-unclicked{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: -18rem;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--discord-palette);
+    z-index: 50;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.menu-clicked{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    padding: 1rem 0 1rem;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black-palette);
+    visibility: visible;
+    transition: 0.5s;
+    z-index: 50;
+}
+
+/* --------------- dropdown menu links ---------------*/
+.navlinks a{
+    display: none;
+    text-align: center;
+    display: block;
+}
+
+  /* hides menu when user switches to landscape */
+  @media screen and (min-width: 768px) {
+    .menu-clicked{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .nav-links {
+      display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+}

@@ -1,0 +1,13 @@
+/* Global vars declaration */
+:root{
+    --black-palette: rgb(30,33,36);
+    --white-palette: rgb(255,255,255);
+    --white-palette-2: rgb(239,239,239);
+    --darkgray-palette: rgb(40,43,48);
+    --gray-palette: rgb(54,57,62);
+    --lightgray-palette: rgb(66,69,73);
+    --discord-palette: 	rgb(89,106,234);
+    --darkdiscord-palette: rgb(64,84,228);
+    --font-family: 'Noto Sans', sans-serif;
+}
+

@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: var(--font-family);
+    margin:0;
+    padding: 0;
+    background-color: var(--black-palette);
+    color: var(--black-palette);
+    font-size: 1.25rem;
+}
+
+img{
+    width: 100%;
+}

@@ -1,0 +1,14 @@
+@import url("./variables.css");
+
+/* component styles */
+@import url("./App.css");
+@import url("./components/Navbar/Navbar.css");
+@import url("./components/Aboutme/About.css");
+@import url("./components/Contactme/Contactme.css");
+@import url("./components/Footer/Footer.css");
+@import url("./components/Hero/Hero.css");
+@import url("./components/InProgress/InProgress.css");
+@import url("./components/Project/Project.css");
+@import url("./components/ProjectList/ProjectList.css");
+@import url("./components/Skills/Skills.css");
+@import url("./components/Timeline/Timeline.css");
