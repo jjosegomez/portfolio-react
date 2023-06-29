@@ -7,37 +7,34 @@ import Project from "./components/ProjectList/ProjectList";
 import Footer from "./components/Footer/Footer";
 import Contactme from "./components/Contactme/Contactme";
 import axios from 'axios';
-import {useState, useEffect} from 'react';
+import { useState, useEffect } from 'react';
 
 const App = () => {
     const [projects, setProjects] = useState([])
-    
-    useEffect (() => {
+
+    useEffect(() => {
         const fetchData = async () => {
-            try{
+            try {
                 const response = await axios.get("http://localhost:5000/api/")
                 setProjects(response.data)
-            }catch(error){
+            } catch (error) {
                 console.error(`Error while getting projects ${error}`)
             }
         }
         fetchData()
 
     }, [])
-    
+
     return (
-        <>
-        {/* <Popup/> */}
-        <Navbar />
-        <div className="app">
+        < div className="App" >
+            <Navbar />
             <Main />
-            <Aboutme/>
-            <Skills/>
-            <Project data={projects}/>
-            <Contactme/>
-            <Footer/>
-        </div>
-        </>
+            <Aboutme />
+            <Skills />
+            <Project data={projects} />
+            <Contactme />
+            <Footer />
+        </div >
     );
 }
 
