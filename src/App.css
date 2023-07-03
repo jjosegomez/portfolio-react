@@ -7,3 +7,23 @@
     color: var(--black-palette);
     font-size: 1.25rem;
 }
+
+body {
+    margin: 0;
+    background-color: var(--oxford-blue);
+    font-family: monospace;
+    border: var(--canary) 20px solid;
+    width: 98vw;
+    height: 96vh;
+    overflow: hidden;
+}
+
+.titles {
+    color: var(--canary);
+}
+
+* {
+    font-family: var(--font);
+    font-weight: 100;
+    color: aliceblue;
+}

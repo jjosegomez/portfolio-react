@@ -1,57 +1,47 @@
-/* ------------- hero section -----------------*/
+.typewriter {
+    font-size: 64px;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--canary);
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: var(--oxford-blue);
+    }
+
+    50% {
+        border-color: green;
+    }
+}
+
 .hero-container {
-    background-color: var(--darkdiscord-palette);
-    display:flex;
-    flex-flow: column;
+    display: flex;
     justify-content: center;
     align-items: center;
-    min-height:80vh;
+    height: 100%;
 }
-
-.hero-card{
-    color: var(--white-palette);
-    padding: 2rem;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-items: space-around;
-    align-items: center;
-    text-align: center;
-    border-radius: 2.5%;
-}
-
-.hero-card img {
-    display: block;
-    max-width: 200px;
-    border-radius: 50%;
-    margin: 1rem auto;
-    border: 1rem var(--white-palette) solid;
-}
-
-.card-text{
-    display:flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: space-between;
-    height: 45%;
-    color: var(--white-palette) !important;
-}
-
-.card-text h4{
-    font-size: 1.5rem;
-}
-
-#my-name {
-    margin-bottom: 2rem;
-    font-size: 4rem;
-}
-
-
-/* in order for media query to work you need to write it after the styles you will be changing */
-@media screen and (max-width: 768px) {
-    .hero-card {
-        background-color: transparent;
-    }
-    .hero-card img{
-        margin-bottom: 3rem;
-    }
-  }
