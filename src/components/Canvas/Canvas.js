@@ -1,8 +1,7 @@
 import React from 'react'
-import { useState } from 'react'
-import Hero from "../Hero/Hero"
+import Main from "../Main/Main.css"
 
-const Navbar = () => {
+const Canvas = () => {
     return (
         <div className='navbar'>
             <div className="top-row">TOP</div>
@@ -11,7 +10,7 @@ const Navbar = () => {
                     LEFT
                 </div>
                 <div class="middle-block">
-                    <Hero />
+                    <Main />
                 </div>
                 <div className="right-column">RIGHT</div>
             </div>
@@ -20,4 +19,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Canvas
