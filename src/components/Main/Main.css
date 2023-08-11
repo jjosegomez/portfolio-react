@@ -1,4 +1,5 @@
 .typewriter {
+    text-align: center;
     font-size: 64px;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
@@ -35,13 +36,21 @@
     }
 
     50% {
-        border-color: green;
+        border-color: orange;
     }
 }
 
-.hero-container {
+.centered-container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
+
+@media (max-width: 30em) {
+    .typewriter {
+        font-size: 45px;
+        margin: 3rem auto;
+    }
+  }
+  

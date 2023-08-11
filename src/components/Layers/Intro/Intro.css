@@ -1,0 +1,13 @@
+.intro-text {
+    margin: 1rem 0;
+    text-align: center;
+    position: relative;
+    left: -8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-style: italic;
+}
+
+
+

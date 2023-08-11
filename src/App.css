@@ -1,57 +1,35 @@
 @import url("./variables.css");
-@import url("./App.css");
 @import url("./components/Main/Main.css");
 @import url("./components/Canvas/Canvas.css");
+@import url("./components/Layers/Intro/Intro.css");
 
-.App{
-    font-family: var(--font-family);
-    margin:0;
-    padding: 0;
-    background-color: var(--black-palette);
-    color: var(--black-palette);
-    font-size: 1.25rem;
+.App {
+  font-family: var(--font-family);
+  margin: 0rem;
+  padding: 1rem;
+  height: 96vh;
+  background-color: var(--canary);
+  color: var(--black-palette);
+  font-size: 1.25rem;
 }
 
 body {
-    margin: 0;
-    background-color: var(--oxford-blue);
-    font-family: monospace;
-    border: var(--canary) 20px solid;
-    width: 98vw;
-    height: 96vh;
-    overflow: hidden;
+  margin: 0rem;
+  padding: 0rem;
+  background-color: var(--canary);
 }
 
 .titles {
-    color: var(--canary);
+  color: var(--canary);
+}
+
+h1, h2, h3, h4 {
+  width: fit-content;
+  margin: 0;
 }
 
 * {
-    font-family: var(--font);
-    font-weight: 100;
-    color: aliceblue;
+  font-family: var(--font);
+  font-weight: 100;
+  color: aliceblue;
 }
-
-.typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
-  
