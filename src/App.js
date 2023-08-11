@@ -1,12 +1,10 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar.js";
+import Canvas from "./components/Canvas/Canvas";
 import "./App.css"
 
 const App = () => {
     return (
-        <div className="App">
-            <Navbar/>
-        </div>
+        <Canvas/>
     );
 }
 

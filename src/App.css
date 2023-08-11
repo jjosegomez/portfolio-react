@@ -1,7 +1,7 @@
 @import url("./variables.css");
 @import url("./App.css");
-@import url("./components/Hero/Hero.css");
-@import url("./components/Navbar/Navbar.css");
+@import url("./components/Main/Main.css");
+@import url("./components/Canvas/Canvas.css");
 
 .App{
     font-family: var(--font-family);
