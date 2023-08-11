@@ -1,0 +1,9 @@
+/* Global vars declaration */
+:root {
+    --font-family: "PP Neue Machina,serif";
+    --canary: #feea00ff;
+    --vivid-sky-blue: #2bd9feff;
+    --oxford-blue: #000022ff;
+    --paynes-gray: #5c7070ff;
+    --ghost-white: #f0eff4ff;
+}

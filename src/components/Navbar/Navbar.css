@@ -1,0 +1,45 @@
+/* ------------- navbar styles ------------ */
+.navbar {
+    height: max-content;
+    border: red 1px solid;
+    height: 90vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+  .top-row{
+    display: block;
+    border: greenyellow dotted 2px;  /* Adjust the background color as desired */
+    width: 20px;
+    height: 20px;
+  }
+
+  .mid-row {
+    display: flex;
+    border: white solid 3px;
+  }
+
+  .bottom-row{
+    border: greenyellow dotted 2px;  /* Adjust the background color as desired */
+    width: 20px;
+    height: 20px;
+  }
+  .left-column {
+    border: greenyellow dotted 2px;  /* Adjust the background color as desired */
+    width: 20px;
+    height: 20px;
+  }
+  .right-column {
+    border: cyan dotted 2px;  /* Adjust the background color as desired */
+    width: 20px;
+    height: 20px;
+}
+  
+  .middle-block { /* Adjust the background color as desired */
+    grid-row: 2 / span 1;  /* Place the middle block in the second row */
+    grid-column: 2 / span 1;  /* Place the middle block in the second column */
+  }
+  
