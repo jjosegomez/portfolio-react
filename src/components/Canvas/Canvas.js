@@ -1,10 +1,10 @@
 import React from 'react'
-import Main from '../Main/Main'
+import Slider from '../Slider/Slider'
 
 const Canvas = () => {
     return (
        <div className='canvas'>
-        <Main/>
+        <Slider/>
        </div>
     )
 }

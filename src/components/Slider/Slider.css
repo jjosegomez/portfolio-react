@@ -1,0 +1,37 @@
+  /* main content */
+  .swiper-slide {
+    /* position: relative;
+    top: -20px; */
+    background-color: var(--oxford-blue);
+    color: #FFF;
+  }
+
+  .swiper-pagination-bullet {
+    border: solid azure 2px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background: azure;
+  }
+  
+  .swiper-button-disabled, .swiper-button-next, .swiper-button-prev {
+    color: azure;
+  }
+
+  .swiper-pagination {
+    margin: 1rem auto;
+  }
+
+  @media (max-width: 600px) {
+    .swiper-button-disabled, .swiper-button-next, .swiper-button-prev {
+        margin: 1rem;
+        position: relative;
+        bottom: 9rem;
+        left: .5rem;
+    }
+  }
+
+  
+
+  
+  
