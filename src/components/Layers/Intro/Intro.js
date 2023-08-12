@@ -6,7 +6,7 @@ const Intro = () => {
             <h1 className='typewriter'>Juan J Gómez</h1>
             <div className='intro-text'>
                 <h3>B.S. Computer Science</h3>
-                <span>-</span>
+                <span>–</span>
                 <h3>Software Engineer</h3>
             </div>
         </div>
