@@ -1,7 +1,7 @@
 /* Global vars declaration */
 :root {
   --font-family: "PP Neue Machina,serif";
-  --canary: #feea00ff;
+  --canary: #5c7070ff;
   --vivid-sky-blue: #2bd9feff;
   --oxford-blue: #000022ff;
   --paynes-gray: #5c7070ff;
@@ -31,17 +31,30 @@ body {
 
 .slider-content-container {
   color: azure;
-  max-width: 95vw;
-  height: 95vh;
-  margin: auto;
+  height: 85vh;
+  max-height: 1000px;
+  margin: 2rem auto 0;
   /* border: greenyellow 5px dotted; */
 }
 
 .centered {
+  position: relative;
+  top: -30px;
+  border: white solid 2px;
   height: 100%;
-  width: 100%;
+  width: 90%;
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  overflow-y: auto;
+}
+
+.two-column {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }

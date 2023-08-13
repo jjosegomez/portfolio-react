@@ -1,0 +1,13 @@
+.about-text {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: auto;
+}
+
+.about-text > h1 {
+  margin-bottom: .5rem;
+}
+
+.about-text > p {
+  width: 800px;
+}

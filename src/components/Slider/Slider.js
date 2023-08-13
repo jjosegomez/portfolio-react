@@ -23,29 +23,30 @@ import Timeline from "../Slides/Timeline/Timeline";
 
 const Slider = () => {
     return (
-        <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
-            spaceBetween={25}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-            effect={'cube'}
-            grabCursor={true}
-            loop
-            cubeEffect={{
-                shadow: true,
-                slideShadows: true,
-                shadowOffset: 20,
-                shadowScale: 0.94,
-            }}
-        >
-            <SwiperSlide><Intro /></SwiperSlide>
-            <SwiperSlide><About /></SwiperSlide>
-            <SwiperSlide><Skills /></SwiperSlide>
-            <SwiperSlide><Projects /></SwiperSlide>
-            <SwiperSlide><Timeline /></SwiperSlide>
-
-        </Swiper>
+        <div className="swiper-container">
+            <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y, EffectCube]}
+                spaceBetween={25}
+                slidesPerView={1}
+                navigation
+                pagination={{ clickable: true }}
+                effect={'cube'}
+                grabCursor={true}
+                loop
+                cubeEffect={{
+                    shadow: true,
+                    slideShadows: true,
+                    shadowOffset: 20,
+                    shadowScale: 0.94,
+                }}
+            >
+                <SwiperSlide><Intro /></SwiperSlide>
+                <SwiperSlide><About /></SwiperSlide>
+                <SwiperSlide><Skills /></SwiperSlide>
+                <SwiperSlide><Projects /></SwiperSlide>
+                <SwiperSlide><Timeline /></SwiperSlide>
+            </Swiper>
+        </div>
     );
 };
 
