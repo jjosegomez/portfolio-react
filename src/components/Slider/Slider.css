@@ -16,6 +16,8 @@
   
   .swiper-button-disabled, .swiper-button-next, .swiper-button-prev {
     color: azure;
+    top: 45%;
+    margin: 0.5rem;
   }
 
   .swiper-pagination {

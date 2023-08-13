@@ -33,11 +33,13 @@ body {
   color: azure;
   max-width: 95vw;
   height: 95vh;
+  margin: auto;
   /* border: greenyellow 5px dotted; */
 }
 
 .centered {
-  height: 95vh;
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

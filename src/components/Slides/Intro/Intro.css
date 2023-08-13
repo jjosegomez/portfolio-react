@@ -15,6 +15,7 @@
     overflow: hidden;
     border-right: .15em solid var(--canary);
     white-space: nowrap;
+    margin: 0 1rem;
     letter-spacing: .15em;
     animation:
         typing 3.5s steps(40, end),
