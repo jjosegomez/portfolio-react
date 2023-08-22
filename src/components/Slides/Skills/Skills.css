@@ -1,0 +1,13 @@
+.skills-container {
+    max-width: 800px;
+    display: flex;
+    overflow: auto;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-container:nth-child(1){
+    background-color: white;
+    border-radius: 50% ;
+}
