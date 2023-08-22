@@ -5,6 +5,7 @@
     width: 80%;
     height: 80%;
     max-width: 1400px;
+    border:"solid white 5px";
   }
 
   .swiper-slide {
@@ -26,6 +27,12 @@
     position: absolute;
     color: azure;
     margin: 0.5rem;
+  }
+
+  .swiper-button-disabled::after,
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 3.5rem; 
   }
 
   .swiper-button-prev {

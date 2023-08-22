@@ -21,6 +21,7 @@
   background-image:  radial-gradient(#00806F 2px, transparent 2px), radial-gradient(#00806F 2px, #000000 2px);
   background-size: 80px 80px;
   background-position: 0 0,40px 40px;
+  overflow: hidden;
 }
 
 body {
@@ -48,23 +49,39 @@ body {
   top: -30px;
   /* border: white solid 2px; */
   height: 100%;
+  height: 95%;
   width: 90%;
   display: flex;
   margin: auto;
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  overflow-y: auto;
 }
 
 .two-column {
+  width: 100%;
+  height: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  overflow-y: auto;
 }
 
 img {
   width: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }

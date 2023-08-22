@@ -40,7 +40,7 @@ const Slider = () => {
                     shadowScale: 0.94,
                 }}
             >
-                <SwiperSlide><Intro /></SwiperSlide>
+                <SwiperSlide ><Intro /></SwiperSlide>
                 <SwiperSlide><About /></SwiperSlide>
                 <SwiperSlide><Skills /></SwiperSlide>
                 <SwiperSlide><Projects /></SwiperSlide>
