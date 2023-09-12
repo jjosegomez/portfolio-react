@@ -81,7 +81,7 @@ function SpringModal({ skill, img, description }) {
 
     return (
         <div>
-            <Button sx={{width:"150px", margin:"1rem"}} onClick={handleOpen}><img src={img} alt='img'></img></Button>
+            <Button sx={{ width: "150px", margin: "1rem" }} onClick={handleOpen}><img src={img} alt='img'></img></Button>
             <Modal
                 aria-labelledby="spring-modal-title"
                 aria-describedby="spring-modal-description"
@@ -112,22 +112,80 @@ function SpringModal({ skill, img, description }) {
 
 
 const Skills = () => {
+
+    //TODO: array loop using array.map
+    //FIXME: not displaying any images, images being past as objects.
+
+    const skillsArray = [
+        {
+            skill: "React",
+            img: { reactIcon },
+            description: "this is react description"
+        },
+        {
+            skill: "Express",
+            img: { expressIcon },
+            description: "this is express description"
+        },
+        {
+            skill: "Node",
+            img: { nodeIcon },
+            description: "this is node description"
+        },
+        {
+            skill: "MongoDB",
+            img: { mongoIcon },
+            description: "this is mongo description"
+        },
+        {
+            skill: "HTML",
+            img: { htmlIcon },
+            description: "this is html description"
+        },
+        {
+            skill: "CSS",
+            img: { cssIcon },
+            description: "this is css description"
+        },
+        {
+            skill: "JavaScript",
+            img: { jsIcon },
+            description: "this is javascript description"
+        },
+        {
+            skill: "C/C++",
+            img: { cppIcon },
+            description: "this is C/C++ description"
+        },
+        {
+            skill: "Python",
+            img: { pythonIcon },
+            description: "this is python description"
+        },
+        {
+            skill: "Swift",
+            img: { swiftIcon },
+            description: "this is swift description"
+        },
+        {
+            skill: "Posgress",
+            img: { mongoIcon },
+            description: "this is posgress description"
+        },
+        {
+            skill: "Git",
+            img: { gitLogo },
+            description: "this is git description"
+        }
+    ]
     return (
         <div className="slider-content-container">
             <div className="centered">
                 <h1>Skills</h1>
                 <div className='skills-container'>
-                    <SpringModal img={reactIcon} skill={"this is a skill"} description={"this is a description"} />
-                    <SpringModal img={expressIcon} skill={"this is a skill"} description={"this is a description"} />
-                    <SpringModal img={nodeIcon} skill={"this is a skill"} description={"this is a description"} />
-                    <SpringModal img={mongoIcon} skill={"this is a skill"} description={"this is a description"} />
-                    <SpringModal img={htmlIcon} skill={"this is a skill"} description={"this is a description"} />
-                    <SpringModal img={cssIcon} skill={"this is a skill"} description={"this is a description"} />
-                    <SpringModal img={jsIcon} skill={"this is a skill"} description={"this is a description"} />
-                    <SpringModal img={cppIcon} skill={"this is a skill"} description={"this is a description"} />
-                    <SpringModal img={pythonIcon} skill={"this is a skill"} description={"this is a description"} />
-                    <SpringModal img={swiftIcon} skill={"this is a skill"} description={"this is a description"} />
-                    <SpringModal img={gitLogo} skill={"this is a skill"} description={"this is a description"} />
+                    {skillsArray.map((item, index) => (
+                        <SpringModal key={index} img={item.img} skill={item.skill} description={item.description} />
+                    ))}
                 </div>
             </div>
         </div>
