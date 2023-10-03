@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.3a98c5e3.css",
-    "main.js": "/portfolio-react/static/js/main.2dcf7ba6.js",
+    "main.css": "/portfolio-react/static/css/main.c476f330.css",
+    "main.js": "/portfolio-react/static/js/main.ad084787.js",
     "static/media/turn-phone.gif": "/portfolio-react/static/media/turn-phone.269e79becf88aa0f3508.gif",
     "static/media/postgresql_logo.svg": "/portfolio-react/static/media/postgresql_logo.29aef66790dafa021ec4c36bbd59e370.svg",
     "static/media/html-5-svgrepo-com.svg": "/portfolio-react/static/media/html-5-svgrepo-com.384d2e984918b75fcd691cbd16e417ee.svg",
@@ -16,11 +16,11 @@
     "static/media/expressjs-icon.svg": "/portfolio-react/static/media/expressjs-icon.14c1a2b58c7cbd9760a3f1753f9e96e8.svg",
     "static/media/Unofficial_JavaScript_logo_2.svg": "/portfolio-react/static/media/Unofficial_JavaScript_logo_2.acc4642f682cd93a4c20a8a02c0cfa21.svg",
     "static/media/React-icon.svg": "/portfolio-react/static/media/React-icon.928f956d9c8ebcffb98a8e917154a81a.svg",
-    "main.3a98c5e3.css.map": "/portfolio-react/static/css/main.3a98c5e3.css.map",
-    "main.2dcf7ba6.js.map": "/portfolio-react/static/js/main.2dcf7ba6.js.map"
+    "main.c476f330.css.map": "/portfolio-react/static/css/main.c476f330.css.map",
+    "main.ad084787.js.map": "/portfolio-react/static/js/main.ad084787.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a98c5e3.css",
-    "static/js/main.2dcf7ba6.js"
+    "static/css/main.c476f330.css",
+    "static/js/main.ad084787.js"
   ]
 }
