@@ -5,6 +5,7 @@ const Projects = () => {
         <div className="slider-content-container">
             <div className="centered">
                 <h1>Projects</h1>
+                <p>Coming Soon</p>
             </div>
         </div>
     )

@@ -1,0 +1,13 @@
+.experience-block{
+    min-width: 400px;
+    width: 80%;
+    border: white solid 3px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.experience-block-header {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid 5px white;
+}
