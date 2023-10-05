@@ -17,9 +17,15 @@
 
 .experience-block-header {
     display: flex;
+    flex-flow: column;
     padding: 1rem;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     border-bottom: solid 5px white;
+}
+
+.experience-block-header > h3 {
+    margin: 0;
+    padding: 0.5rem;
 }

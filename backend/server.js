@@ -12,12 +12,13 @@ const PORT = 5050
 const express = require("express")
 const cheerio = require("cheerio")
 const axios = require("axios")
+const CORS = require("cors")
 
 const app = express();
 
 async function getProjectArray() {
     // downloading the target web page by performing an HTTP GET request in Axios
-    
+
     const axiosResponse = await axios.request({
         method: "GET",
         url: "https://github.com/jjosegomez?tab=repositories",
@@ -56,17 +57,18 @@ async function getProjectArray() {
 
 app.get("/api/projects", async (req, res) => {
     try {
-      const projects = await getProjectArray();
-      return res.status(200).json({
-        projects: projects,
-      });
+        res.setHeader("Access-Control-Allow-Origin", "*");
+        const projects = await getProjectArray();
+        return res.status(200).json({
+            projects: projects,
+        });
     } catch (err) {
-      return res.status(500).json({
-        err: err.toString(),
-      });
+        return res.status(500).json({
+            err: err.toString(),
+        });
     }
-  });
-  
-  app.listen(PORT, () =>
+});
+
+app.listen(PORT, () =>
     console.log(`The server is active and running on port ${PORT}`)
-  );
+);

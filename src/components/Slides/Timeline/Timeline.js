@@ -6,7 +6,6 @@ const ExperienceBlock = (props) => {
         <div className="experience-block">
             <div className="experience-block-header">
                 <h3>{props.company}</h3>
-                <h3> – </h3>
                 <h3>{props.title}</h3>
             </div>
             <div className="description">
