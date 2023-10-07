@@ -19,16 +19,17 @@ const Projects = () => {
             {console.log(projects)}
             <div className="centered">
                 <h1>Projects</h1>
-                <ul>
-                    {projects?.map((project) => (
-                        <li key={project.id}>
+                <div className="project-container">
+                    {projects?.map((project, id) => (
+                        <div key={id} className="project">
                             <strong>Name:</strong> {project.name}<br />
                             <strong>Description:</strong> {project.description}<br />
                             <strong>Language:</strong> {project.language}<br />
                             <strong>Last Update:</strong> {project.lastUpdate}
-                        </li>
-                    ))}
-                </ul>
+                        </div> )
+                        )
+                    }
+                </div>              
             </div>
         </div>
     )
