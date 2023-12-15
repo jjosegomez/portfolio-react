@@ -1,0 +1,23 @@
+:root {
+  font-family: 'Hedvig Letters Serif', serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #005400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #005400;
+  text-decoration: none;
+  transition: .3s;
+}
+
+a:hover {
+  font-weight: 800;
+  text-decoration: underline;
+}
