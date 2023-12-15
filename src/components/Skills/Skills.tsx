@@ -38,9 +38,11 @@ const SkillModal: React.FC<SkillModalProps> = ({ img, title, description }) => {
     return (
         <>
             <a onClick={handleModal}><img src={img} alt="" /></a>
-            <div className={`skill ${modal}`} >
-                <h2>{title}</h2>
-                <p>{description}</p>
+            <div onClick={handleModal} className={`skill ${modal}`} >
+                <div className="modal-text">
+                    <h2>{title}</h2>
+                    <p>{description}</p>
+                </div>
             </div>
         </>
     )
@@ -48,9 +50,6 @@ const SkillModal: React.FC<SkillModalProps> = ({ img, title, description }) => {
 
 
 const Skills: React.FC = () => {
-
-    //TODO: array loop using array.map
-    //FIXME: not displaying any images, images being past as objects.
 
     const skillsArray = [
         {
@@ -115,16 +114,14 @@ const Skills: React.FC = () => {
         }
     ]
     return (
-        <div className="slider-content-container">
-            <div className="centered">
+            <div className="skills">
                 <h1>Skills</h1>
-                <div className='skills-container'>
+                <div className='skills-list'>
                     {skillsArray.map((item, index) => (
                         <SkillModal key={index} img={item.img} title={item.skill} description={item.description} />
                     ))}
                 </div>
             </div>
-        </div>
     )
 }
 
