@@ -26,15 +26,14 @@ function App() {
         setCurrentContent(<Timeline />);
         break;
     }
-  }, [currentState]);
+  },[currentState])
 
   return (
-    <PortfolioProvider>
       <div className='App'>
         <Navbar />
+        {currentState}
         {currentContent}
       </div>
-    </PortfolioProvider>
   );
 }
 
