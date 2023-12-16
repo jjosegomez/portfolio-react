@@ -20,12 +20,12 @@
     user-select: none;
     font-size: 30px;
     margin: auto;
+    cursor:pointer;
 }
 
 .logo.menu {
     position: relative;
-    left: 11px;
-    margin: 10px 15px;
+    margin: 20px 60px;
     color: #fff;
 }
 
@@ -51,25 +51,28 @@
 }
 
 .mobile-nav {
-    position: relative;
     display: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     height: max-content;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 1rem;
     border-bottom: solid 3px green;
 }
 
 .mobile-menu {
     position: absolute;
     background-color: #005400;
-    width: 100%;
+    margin: auto;
     transition: .3s;
     overflow: hidden;
+    width: 110%;
 }
 
 .mobile-menu.collapsed {
     top: 0;
+    left: -25px;
     height: fit-content;
 }
 

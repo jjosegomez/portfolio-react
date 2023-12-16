@@ -1,4 +1,3 @@
-
 import "./About.css"
 
 const About:React.FC = () => {

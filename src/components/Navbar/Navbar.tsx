@@ -1,11 +1,14 @@
-import React, { useState } from "react"
+import React, { useContext, useState } from "react"
 import "./Navbar.css"
-
 import linkedInLogo from "../../assets/linkedin-svgrepo-com.svg"
 import githubLogo from "../../assets/github-142-svgrepo-com.svg"
 import emailLogo from "../../assets/telegram-svgrepo-com.svg"
 
+import { PortfolioContext, PortfolioContextProps } from "../PortfolioContext"
+
 const Navbar: React.FC = () => {
+
+    const {updateCurrentState} = useContext<PortfolioContextProps>(PortfolioContext);
 
     const [collapse, setCollapse] = useState<string>("hidden")
     const [hamburger, setHamburger] = useState<string>("")
@@ -26,11 +29,11 @@ const Navbar: React.FC = () => {
         <>
             <nav className="desktop-nav">
                 <div className="links">
-                    <a href="#">Projects</a>
-                    <a href="#">Timeline</a>
-                    <a href="#">Hobbies</a>
+                    <a onClick={() => {updateCurrentState(1)}}>About Me</a>
+                    <a onClick={() => {updateCurrentState(2)}}>Projects</a>
+                    <a onClick={() => {updateCurrentState(3)}}>Timeline</a>
                 </div>
-                <h1 className="logo">Tech by Juan</h1>
+                <h1 onClick={() => {updateCurrentState(0)}} className="logo">Tech by Juan</h1>
                 <div className="contact">
                     <a><img src={linkedInLogo} alt="linkedin" /></a>
                     <a><img src={githubLogo} alt="github" /></a>
@@ -51,9 +54,9 @@ const Navbar: React.FC = () => {
                 <div className={`mobile-menu ${collapse}`}>
                     <h1 className="logo menu">Tech by Juan</h1>
                     <div className={"mobile-links"}>
-                        <a href="#">Projects</a>
-                        <a href="#">Timeline</a>
-                        <a href="#">Hobbies</a>
+                    <a onClick={() => {updateCurrentState(1)}}>About Me</a>
+                    <a onClick={() => {updateCurrentState(2)}}>Projects</a>
+                    <a onClick={() => {updateCurrentState(3)}}>Timeline</a>
                     </div>
                     <div className="mobile-contact ">
                         <a><img src={linkedInLogo} alt="linkedin" /></a>
