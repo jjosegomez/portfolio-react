@@ -11,7 +11,7 @@ import swiftIcon from "../../assets/skills/swift-icon.svg"
 import gitLogo from "../../assets/skills/git-icon-logo-svgrepo-com.svg"
 import postgresIcon from "../../assets/skills/postgresql_logo.svg"
 
-import React, {useState} from "react"
+import React, { useState } from "react"
 
 import "./Skills.css"
 
@@ -26,10 +26,10 @@ const SkillModal: React.FC<SkillModalProps> = ({ img, title, description }) => {
     const [modal, setModal] = useState<string>("")
 
     const handleModal = () => {
-        if(modal == "active"){
+        if (modal == "active") {
             setModal("")
         }
-        if(modal == ""){
+        if (modal == "") {
             setModal("active")
         }
         console.log(modal)
@@ -114,14 +114,11 @@ const Skills: React.FC = () => {
         }
     ]
     return (
-            <div className="skills">
-                <h1>Skills</h1>
-                <div className='skills-list'>
-                    {skillsArray.map((item, index) => (
-                        <SkillModal key={index} img={item.img} title={item.skill} description={item.description} />
-                    ))}
-                </div>
-            </div>
+        <div className='skills-list'>
+            {skillsArray.map((item, index) => (
+                <SkillModal key={index} img={item.img} title={item.skill} description={item.description} />
+            ))}
+        </div>
     )
 }
 

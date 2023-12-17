@@ -24,3 +24,13 @@ a:hover {
 img {
   width: 100%;
 }
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}

@@ -1,31 +1,80 @@
 .timeline {
-    text-align: center;
-    overflow-y: scroll;
     margin: 2rem auto;
-    min-width: 400px;
-    height: 90%;
-}
-
-.experience-block{
-    min-width: 400px;
-    width: 80%;
-    border: white solid 3px;
-    margin: 2rem auto;
-    text-align: center;
-    padding: 1rem;
-}
-
-.experience-block-header {
     display: flex;
-    flex-flow: column;
-    padding: 1rem;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border-bottom: solid 5px white;
+    flex-flow: column;
+    width: 100%;
 }
 
-.experience-block-header > h3 {
-    margin: 0;
-    padding: 0.5rem;
+.timeline > h1 {
+    font-size: 90px;
+    line-height: 85px;
+    margin-bottom: 4rem;
+  }
+
+.experience-block{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 70%;
+    min-width: 300px;
+    min-height: 500px;
+    border-radius: 20px;
+    border: #005400 solid 10px;
+}
+
+.experience-block-img {
+    width: 38%;
+    min-width: 320px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px 0 0 10px;
+}
+
+.experience-block-text {
+    width: 60%;
+}
+
+.experience-block-text > h2 {
+    font-size: 60px;
+    margin: 3rem 1rem 1rem;
+    line-height: 52px;
+}
+
+.experience-block-text > h3 {
+    
+    font-size: 30px;
+    margin: 0 1rem;
+    padding: 1rem 0 0;
+}
+
+.description {
+    margin: auto;
+    font-size: 20px;
+    max-width: 700px;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.description > li {
+    margin: 1rem;
+}
+
+.line {
+    margin: 0 auto;
+    padding: 0;
+    height: 60px;
+    width: 10px;
+    background-color: #005400;
+    border-radius: 2px;
+}
+
+.date {
+    text-align: center;
+    background-color: #005400;
+    color: white;
+    width: 80px;
+    border-radius: 50px;
 }
