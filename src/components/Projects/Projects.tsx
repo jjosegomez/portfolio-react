@@ -102,17 +102,15 @@ const Projects: React.FC = () => {
 
     return (
         <div className="project-container">
-            <h1>My Projects</h1>
-            <div className="projects">
             <div className="project-list">
+                <h1>My Projects</h1>
                 {
                     projectList.map((project, index) => (
-                        <a className="project-name" onClick={() => {setCurrentIdx(index)}} key={index}>{project.name}</a> // Use a unique key for each child
+                        <a className="project-name" onClick={() => { setCurrentIdx(index) }} key={index}>{project.name}</a> // Use a unique key for each child
                     ))
                 }
             </div>
             <Project project={projectList[currentIdx]} className="large-project" />
-            </div>
         </div>
     )
 }

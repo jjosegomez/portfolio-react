@@ -1,8 +1,6 @@
-.project-container > h1 {
+.project-list > h1 {
     font-size: 90px;
     line-height: 85px;
-    margin: 2rem;
-    padding: 2rem 0;
 }
 
 .projects {
@@ -37,7 +35,6 @@
 .project {
     width: clamp(320px, 70%, 700px);
     border-radius: 10px;
-    border: #005400 solid 5px;
     margin: 1rem;
     padding: 3rem;
 }
@@ -45,7 +42,7 @@
 .project > figure {
     margin: auto;
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     background-color: rgba(0, 84, 0, .6);
     background-position: center;
     background-size: contain;

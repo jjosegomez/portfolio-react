@@ -35,16 +35,16 @@ const Navbar: React.FC = () => {
                 </div>
                 <h1 onClick={() => {updateCurrentState(0)}} className="logo">Tech by Juan</h1>
                 <div className="contact">
-                    <a><img src={linkedInLogo} alt="linkedin" /></a>
-                    <a><img src={githubLogo} alt="github" /></a>
-                    <a><img src={emailLogo} alt="email" /></a>
+                    <a href="https://www.linkedin.com/in/jjgomezswe/" ><img src={linkedInLogo} alt="linkedin" /></a>
+                    <a href="https://github.com/jjosegomez" ><img src={githubLogo} alt="github" /></a>
+                    <a href="" ><img src={emailLogo} alt="email" /></a>
                 </div>
             </nav>
 
 
 
             <nav className="mobile-nav">
-                <h1 className="logo">Tech by Juan</h1>
+                <h1 onClick={() => {updateCurrentState(0)}} className="logo">Tech by Juan</h1>
 
                 <div onClick={handleCollapse} className={`hamburger ${hamburger}`} id="hamburger-6">
                     <span className="line"></span>
@@ -52,19 +52,18 @@ const Navbar: React.FC = () => {
                     <span className="line"></span>
                 </div>
                 <div className={`mobile-menu ${collapse}`}>
-                    <h1 className="logo menu">Tech by Juan</h1>
+                    <h1 onClick={() => {updateCurrentState(0)}} className="logo menu">Tech by Juan</h1>
                     <div className={"mobile-links"}>
                     <a onClick={() => {updateCurrentState(1)}}>About Me</a>
                     <a onClick={() => {updateCurrentState(2)}}>Projects</a>
                     <a onClick={() => {updateCurrentState(3)}}>Timeline</a>
                     </div>
                     <div className="mobile-contact ">
-                        <a><img src={linkedInLogo} alt="linkedin" /></a>
-                        <a><img src={githubLogo} alt="github" /></a>
-                        <a><img src={emailLogo} alt="email" /></a>
+                        <a href="https://www.linkedin.com/in/jjgomezswe/" ><img src={linkedInLogo} alt="linkedin" /></a>
+                        <a href="https://github.com/jjosegomez" ><img src={githubLogo} alt="github" /></a>
+                        <a href="mailto:jjgomezswe@gmail.com?subject=Hey Juan, pretty cool website!&body=How are you doing?"><img src={emailLogo} alt="email" /></a>
                     </div>
                 </div>
-
             </nav>
         </>
     )
