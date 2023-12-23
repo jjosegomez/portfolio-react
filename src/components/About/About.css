@@ -2,19 +2,20 @@
   padding: 1rem 0;
   width: 100%;
   display: flex; 
-  flex-wrap: wrap-reverse; 
+  flex-wrap: wrap; 
   justify-content: space-evenly;
-  align-items: center;
+  align-items: start;
 }
 
 .about-text {
   min-width: 300px;
   width: 50%;
   font-size: 1.4rem;
-  text-align: left;
+  text-align: center;
 }
 
 .about-text > h1 {
   font-size: 90px;
   margin-bottom: .5rem;
+  line-height: 80px;
 }
