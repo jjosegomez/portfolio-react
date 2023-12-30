@@ -68,12 +68,13 @@
     transition: .3s;
     overflow: hidden;
     width: 110%;
+    z-index: 100;
+    left: -25px;
 }
 
 .mobile-menu.collapsed {
     top: 0;
-    left: -25px;
-    height: fit-content;
+    height: 350px;
     transition: .3s;
 }
 
