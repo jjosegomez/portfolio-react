@@ -1,3 +1,5 @@
+import React, { useState } from "react"
+
 import reactIcon from "../../assets/skills/React-icon.svg"
 import expressIcon from "../../assets/skills/expressjs-icon.svg"
 import mongoIcon from "../../assets/skills/mongodb-icon.svg"
@@ -10,8 +12,6 @@ import cppIcon from "../../assets/skills/ISO_C++_Logo.svg"
 import swiftIcon from "../../assets/skills/swift-icon.svg"
 import gitLogo from "../../assets/skills/git-icon-logo-svgrepo-com.svg"
 import postgresIcon from "../../assets/skills/postgresql_logo.svg"
-
-import React, { useState } from "react"
 
 import "./Skills.css"
 
