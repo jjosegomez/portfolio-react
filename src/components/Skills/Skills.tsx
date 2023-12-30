@@ -15,13 +15,18 @@ import postgresIcon from "../../assets/skills/postgresql_logo.svg"
 
 import "./Skills.css"
 
-type SkillModalProps = {
+
+type Skills = {
     img: string,
-    title: string,
+    skill: string,
     description: string
 }
 
-export const SkillModal: React.FC<SkillModalProps> = ({ img, title, description }) => {
+type SkillList = {
+    skillList: Skills[]
+}
+
+export const SkillModal: React.FC<Skills> = ({ img, skill, description }) => {
 
     const [modal, setModal] = useState<string>("")
 
@@ -40,7 +45,7 @@ export const SkillModal: React.FC<SkillModalProps> = ({ img, title, description 
             <a onClick={handleModal}><img src={img} alt="" /></a>
             <div onClick={handleModal} className={`skill ${modal}`} >
                 <div className="modal-text">
-                    <h2>{title}</h2>
+                    <h2>{skill}</h2>
                     <p>{description}</p>
                 </div>
             </div>
@@ -49,7 +54,7 @@ export const SkillModal: React.FC<SkillModalProps> = ({ img, title, description 
 }
 
 
-const Skills: React.FC = () => {
+const Skills: React.FC<SkillList> = ({skillList}) => {
 
     const skillsArray = [
         {
@@ -115,8 +120,8 @@ const Skills: React.FC = () => {
     ]
     return (
         <div className='skills-list'>
-            {skillsArray.map((item, index) => (
-                <SkillModal key={index} img={item.img} title={item.skill} description={item.description} />
+            {skillList.map((item, index) => (
+                <SkillModal key={index} img={item.img} skill={item.skill} description={item.description} />
             ))}
         </div>
     )
