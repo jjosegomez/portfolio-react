@@ -4,7 +4,22 @@
   margin: auto;
 }
 
-.about-img
+.about-img {
+  width: clamp(250px, 33%, 600px);
+  max-height: 550px;
+  margin: 0 auto;
+  max-width: 100%; /* Ensure the container doesn't exceed its parent's width */
+  overflow: hidden; /* Hide any overflow */
+  border-radius: 8px;
+}
+
+.about-img img {
+  max-width: 100%; /* Prevent the image from exceeding its container's width */
+  height: auto; /* Maintain the image's aspect ratio */
+  display: block; /* Prevent extra space below the image */
+  margin: 0 auto; /* Center the image horizontally within its container */
+}
+
 
 .about-text {
   margin: auto;
@@ -14,6 +29,7 @@
 }
 
 .about-text > h1 {
+  margin-top: 2rem;
   text-align: center;
   font-size: 90px;
   margin-bottom: .5rem;

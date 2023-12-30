@@ -21,7 +21,7 @@ type SkillModalProps = {
     description: string
 }
 
-const SkillModal: React.FC<SkillModalProps> = ({ img, title, description }) => {
+export const SkillModal: React.FC<SkillModalProps> = ({ img, title, description }) => {
 
     const [modal, setModal] = useState<string>("")
 

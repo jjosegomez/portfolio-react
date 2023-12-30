@@ -74,11 +74,13 @@
     top: 0;
     left: -25px;
     height: fit-content;
+    transition: .3s;
 }
 
 .mobile-menu.hidden {
     top: 0;
     height: 0;
+    transition: .3s;
 }
 
 .mobile-links {

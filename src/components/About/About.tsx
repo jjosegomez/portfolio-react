@@ -5,10 +5,12 @@ const About: React.FC = () => {
     return (
         <>
             <div className="about">
-                <figure className="about-img" style={{backgroundImage:`url(${aboutMeImg})`}}></figure>
+                <figure className="about-img">
+                    <img src={aboutMeImg}></img>
+                </figure>
                 <div className="about-text">
                     <h1>👋 Hey, I'm Juan!</h1>
-                    <br/>
+                    <br />
                     <p>I'm Juan José Gomez, a dynamic software engineer dedicated to creating captivating web applications that bring innovative ideas to life. My expertise spans HTML, CSS, JavaScript, React, Node, and more, allowing me to craft seamless user experiences that make a lasting impact.</p>
                     <p>🚀 My focus on AI and web development has been instrumental in shaping my journey. I'm currently exploring Data Science courses by Harvard University, continually enriching my skills to stay at the forefront of technological innovation.</p>
                     <p>💼 My experience at Eversana Intouch involved leading projects that revitalized client websites, enhancing user engagement through HTML, CSS, and JavaScript. Additionally, as a tech lead at the Google Developer Student Club, I ignited passion among students and fostered innovation through technical workshops.</p>

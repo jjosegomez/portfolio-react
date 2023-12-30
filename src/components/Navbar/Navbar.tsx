@@ -52,11 +52,11 @@ const Navbar: React.FC = () => {
                     <span className="line"></span>
                 </div>
                 <div className={`mobile-menu ${collapse}`}>
-                    <h1 onClick={() => {updateCurrentState(0)}} className="logo menu">Tech by Juan</h1>
+                    <h1 onClick={() => {updateCurrentState(0); handleCollapse()}} className="logo menu">Tech by Juan</h1>
                     <div className={"mobile-links"}>
-                    <a onClick={() => {updateCurrentState(1)}}>About Me</a>
-                    <a onClick={() => {updateCurrentState(2)}}>Projects</a>
-                    <a onClick={() => {updateCurrentState(3)}}>Timeline</a>
+                    <a onClick={() => {updateCurrentState(1); handleCollapse()}}>About Me</a>
+                    <a onClick={() => {updateCurrentState(2); handleCollapse()}}>Projects</a>
+                    <a onClick={() => {updateCurrentState(3); handleCollapse()}}>Timeline</a>
                     </div>
                     <div className="mobile-contact ">
                         <a href="https://www.linkedin.com/in/jjgomezswe/" ><img src={linkedInLogo} alt="linkedin" /></a>
