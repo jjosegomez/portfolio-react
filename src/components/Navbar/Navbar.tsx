@@ -1,8 +1,8 @@
 import React, { useContext, useState } from "react"
 import "./Navbar.css"
-import linkedInLogo from "../../assets/linkedin-svgrepo-com.svg"
-import githubLogo from "../../assets/github-142-svgrepo-com.svg"
-import emailLogo from "../../assets/telegram-svgrepo-com.svg"
+import linkedInLogo from "../../assets/socials/linkedin-svgrepo-com.svg"
+import githubLogo from "../../assets/socials/github-142-svgrepo-com.svg"
+import emailLogo from "../../assets/socials/telegram-svgrepo-com.svg"
 
 import { PortfolioContext, PortfolioContextProps } from "../PortfolioContext"
 

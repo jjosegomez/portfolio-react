@@ -6,6 +6,7 @@ import { PortfolioContext, PortfolioContextProps } from './components/PortfolioC
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
 import Timeline from './components/Timeline/Timeline';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [currentContent, setCurrentContent] = useState<React.ReactElement>(<Hero />);
@@ -32,6 +33,7 @@ function App() {
       <div className='App'>
         <Navbar />
         {currentContent}
+        <Footer/>
       </div>
   );
 }

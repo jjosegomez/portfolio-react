@@ -3,11 +3,12 @@
     line-height: 85px;
 }
 
-.projects {
+.project-container {
     margin: auto;
     width: 95%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .project-list {
@@ -21,7 +22,7 @@
     transition: .5s;
     width: max-content;
     border-radius: 10px;
-    max-width: 75%;
+    max-width: 70%;
 }
 
 .project-name:hover {
@@ -49,3 +50,9 @@
     background-repeat: no-repeat;
     border-radius: 10px;
 }
+
+.project-technologies > ul > li {
+    margin-left: 1rem;
+}
+
+

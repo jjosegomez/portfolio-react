@@ -1,6 +1,6 @@
 import React from "react";
 import "./Timeline.css";
-import heroImg from "../../assets/hero.png"
+import heroImg from "../../assets/images/hero.png"
 
 type ExperienceBlockProps = {
     image: string,

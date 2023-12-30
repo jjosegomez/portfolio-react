@@ -6,7 +6,6 @@ type ProjectProps = {
         name: string;
         description: string;
         stack: string[];
-        lastUpdate: string;
     };
     className:string
 };
@@ -17,8 +16,8 @@ const Project: React.FC<ProjectProps> = ({ project, className }) => {
             <figure style={{ backgroundImage: `url(${project.image})` }}></figure>
             <h2>{project.name}</h2>
             <p>{project.description}</p>
-            <div>
-                Technologies Used:
+            <div className='project-technologies'>
+                <h3>Technologies Used:</h3>
                 <ul>
                     {/* Mapping through the stack array and returning a list item for each entry */}
                     {project.stack.map((tech, index) => (
@@ -26,7 +25,6 @@ const Project: React.FC<ProjectProps> = ({ project, className }) => {
                     ))}
                 </ul>
             </div>
-            <span>Last Updated: {project.lastUpdate}</span>
         </div>
     );
 };
