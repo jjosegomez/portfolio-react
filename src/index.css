@@ -11,6 +11,7 @@ body {
 }
 
 a {
+  user-select: none;
   font-weight: 500;
   color: #005400;
   text-decoration: none;
@@ -24,6 +25,7 @@ a:hover {
 }
 img {
   width: 100%;
+  user-select: none;
 }
 
 li {
