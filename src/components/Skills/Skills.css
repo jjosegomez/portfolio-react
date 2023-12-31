@@ -1,14 +1,39 @@
 .skills-list {
-    justify-self: flex-end;
-    border: red solid 1px;
+    /* border: red solid 1px; */
     display: flex;
-    justify-content: center;
+    margin: 0;
     align-items: center;
     flex-flow: row wrap;
 }
 
 .skill {
-    margin: 0 1rem;
+    position: relative;
+    left: -1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+    max-height: 100px;
+    max-width: 200px;
+    border-radius: 5px;
+    background-color: #005400;
+    color: #fff;
+    padding: 10px;
+    transition: .5s;
+    text-align: left;
+}
+
+.skill:hover {
+    text-decoration: none;
+    color: #005400;
+    background: #fff;
+    border: 8px solid #005400;
+    padding: 5px;
+}
+
+.skill > img {
+   margin: 5px 10px 5px 5px;
+   width: 30px;
 }
 
 .skill-modal{

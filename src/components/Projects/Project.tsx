@@ -15,7 +15,6 @@ const Project: React.FC<ProjectProps> = ({ project, className }) => {
             <h2>{project.name}</h2>
             <p>{project.description}</p>
             <div className='project-technologies'>
-                <h3>Technologies Used:</h3>
                 <SkillsList skillList={project.skills} />
             </div>
         </div>

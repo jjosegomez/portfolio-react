@@ -1,10 +1,27 @@
 import { ProjectType } from "../../types/ProjectType";
+
+//skills
+// import cppLogo from "../../assets/skills/cpp.svg"
+import reactLogo from "../../assets/skills/React-icon.svg"
+// import htmlLogo from "../../assets/skills/html.svg"
+// import cssLogo from "../../assets/skills/css.svg"
+import jsLogo from "../../assets/skills/javascript.svg"
+import typescriptLogo from "../../assets/skills/typescript.svg"
+import nodeLogo from "../../assets/skills/nodejs.svg"
+import expressLogo from "../../assets/skills/express.svg"
+import mongodbLogo from "../../assets/skills/mongodb.svg"
+import pythonLogo from "../../assets/skills/python-icon.svg"
+// import gitLogo from "../../assets/skills/git.svg"
+import swiftLogo from "../../assets/skills/swift-icon.svg"
+
+//projects
 import FacialRecognitionImg from "../../assets/projects/facial-recognition.gif";
 import teachABullImg from "../../assets/projects/teachabull.gif";
 import technicalAnalysisImg from "../../assets/projects/technical-analysis.gif";
 import instagramImg from "../../assets/projects/instagram.gif";
 import twitterImg from "../../assets/projects/twitter.gif";
 import pacmanImg from "../../assets/projects/pacman.gif";
+
 
 export const projectListData: ProjectType[] = [
     {
@@ -14,12 +31,12 @@ export const projectListData: ProjectType[] = [
         skills: [
             {
                 name: "TypeScript",
-                img: "",
+                img: typescriptLogo,
                 description: "Used for application logic."
             },
             {
                 name: "React",
-                img: "",
+                img: reactLogo,
                 description: "Utilized for dynamic front-end."
             },
             {
@@ -36,7 +53,7 @@ export const projectListData: ProjectType[] = [
         skills: [
             {
                 name: "Python",
-                img: "",
+                img: pythonLogo,
                 description: "Utilized for game development and AI implementation."
             }
         ]
@@ -48,22 +65,22 @@ export const projectListData: ProjectType[] = [
         skills: [
             {
                 name: "MongoDB",
-                img: "",
+                img: mongodbLogo,
                 description: "NoSQL database used for data storage."
             },
             {
                 name: "Express.js",
-                img: "",
+                img: expressLogo,
                 description: "Web application framework for Node.js."
             },
             {
                 name: "React",
-                img: "",
+                img: reactLogo,
                 description: "Utilized for front-end development."
             },
             {
                 name: "Node.js",
-                img: "",
+                img: nodeLogo,
                 description: "JavaScript runtime for server-side development."
             }
         ]
@@ -80,7 +97,7 @@ export const projectListData: ProjectType[] = [
             },
             {
                 name: "Python",
-                img: "",
+                img: pythonLogo,
                 description: "Utilized for scripting and automation."
             }
         ]
@@ -92,7 +109,7 @@ export const projectListData: ProjectType[] = [
         skills: [
             {
                 name: "JavaScript",
-                img: "",
+                img: jsLogo,
                 description: "Used for scripting and web interactions."
             },
             {
@@ -109,7 +126,7 @@ export const projectListData: ProjectType[] = [
         skills: [
             {
                 name: "Swift",
-                img: "",
+                img: swiftLogo,
                 description: "Utilized for iOS app development."
             },
             {
@@ -136,7 +153,7 @@ export const projectListData: ProjectType[] = [
             },
             {
                 name: "Swift",
-                img: "",
+                img: swiftLogo,
                 description: "Utilized for iOS app development."
             },
             {
@@ -192,6 +209,11 @@ export const projectListData: ProjectType[] = [
                 name: "Dimensionality Reduction and Feature Extraction",
                 img: "",
                 description: "Techniques for reducing data complexity and extracting meaningful features."
+            },
+            {
+                name: "Python",
+                img: pythonLogo,
+                description: "Utilized for scripting and automation."
             }
         ]
     },
@@ -202,22 +224,22 @@ export const projectListData: ProjectType[] = [
         skills: [
             {
                 name: "TypeScript",
-                img: "",
+                img: typescriptLogo,
                 description: "Used for application logic."
             },
             {
                 name: "React",
-                img: "",
+                img: reactLogo,
                 description: "Utilized for dynamic front-end."
             },
             {
                 name: "Node.js",
-                img: "",
+                img: nodeLogo,
                 description: "JavaScript runtime for server-side development."
             },
             {
                 name: "MongoDB",
-                img: "",
+                img: mongodbLogo,
                 description: "NoSQL database used for data storage."
             }
         ]
