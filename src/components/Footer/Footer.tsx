@@ -5,17 +5,12 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = () => {
-  const currentDate = new Date();
 
-  const formattedDate = currentDate.toLocaleString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  });
+  const lastUpdate = "December 31st, 2023"
 
   return (
     <footer>
-      <p>&copy; Tech by Juan 2023 | Last Updated: {formattedDate}</p>
+      <p>&copy; Tech by Juan 2023 | Last Updated: {lastUpdate}</p>
     </footer>
   );
 };

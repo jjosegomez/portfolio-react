@@ -28,27 +28,6 @@
     margin: 0;
 }
 
-.hero-text > a {
-    border-radius: 5px;
-    border: 3px solid #005400;
-    background-color: transparent;
-    color: #005400;
-    margin: 0;
-    width: 150px;
-    padding: 10px;
-    margin: 0 auto;
-    font-size: 16px;
-    font-weight: 800;
-    cursor: pointer;
-    transition: .3s;
-}
-
-.hero-text > a:hover {
-    background-color: #005400;
-    color: #fff;
-    text-decoration: none;
-}
-
 
 .hero-img {
     background-position: center -175px;

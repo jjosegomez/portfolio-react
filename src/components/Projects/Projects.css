@@ -51,8 +51,7 @@
     border-radius: 10px;
 }
 
-.project-technologies > ul > li {
-    margin-left: 1rem;
+.project-technologies {
+    display: flex;
+    justify-content: flex-start;
 }
-
-

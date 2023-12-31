@@ -1,15 +1,8 @@
 import React, { useState } from "react";
-
 import "./Skills.css"
+import { SkillsType } from "../../types/SkillTypes";
 
-
-type Skills = {
-    img: string,
-    skill: string,
-    description: string
-}
-
-export const Skill: React.FC<Skills> = ({ img, skill, description }) => {
+export const Skill: React.FC<SkillsType> = ({ img, name, description }) => {
 
     const [modal, setModal] = useState<string>("")
 
@@ -25,10 +18,10 @@ export const Skill: React.FC<Skills> = ({ img, skill, description }) => {
 
     return (
         <>
-            <a onClick={handleModal}><img src={img} alt="" /> {skill}</a>
-            <div onClick={handleModal} className={`skill ${modal}`} >
+            <a className="skill" onClick={handleModal}><img src={img} alt="." /> {name}</a>
+            <div onClick={handleModal} className={`skill-modal ${modal}`} >
                 <div className="modal-text">
-                    <h2>{skill}</h2>
+                    <h2>{name}</h2>
                     <p>{description}</p>
                 </div>
             </div>

@@ -4,7 +4,7 @@ import Hero from './components/Hero/Hero';
 import Navbar from './components/Navbar/Navbar';
 import { PortfolioContext, PortfolioContextProps } from './components/PortfolioContext';
 import About from './components/About/About';
-import Projects from './components/Projects/Projects';
+import Projects from './components/Projects/ProjectList';
 import Timeline from './components/Timeline/Timeline';
 import Footer from './components/Footer/Footer';
 

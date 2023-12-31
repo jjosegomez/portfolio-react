@@ -1,14 +1,12 @@
 import React from 'react'; // Ensure React is imported
+import SkillsList from '../Skills/SkillsList';
+import { ProjectType } from '../../types/ProjectType';
 
 type ProjectProps = {
-    project: {
-        image: string;
-        name: string;
-        description: string;
-        stack: string[];
-    };
-    className:string
-};
+    project: ProjectType,
+    className: string
+}
+
 
 const Project: React.FC<ProjectProps> = ({ project, className }) => {
     return (
@@ -18,12 +16,7 @@ const Project: React.FC<ProjectProps> = ({ project, className }) => {
             <p>{project.description}</p>
             <div className='project-technologies'>
                 <h3>Technologies Used:</h3>
-                <ul>
-                    {/* Mapping through the stack array and returning a list item for each entry */}
-                    {project.stack.map((tech, index) => (
-                        <li key={index}>{tech}</li> // Use a unique key for each child
-                    ))}
-                </ul>
+                <SkillsList skillList={project.skills} />
             </div>
         </div>
     );

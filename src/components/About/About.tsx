@@ -19,6 +19,8 @@ const About: React.FC = () => {
                     <p>🚵‍♂️ Beyond my tech pursuits, I delight in cycling along picturesque trails and immersing myself in thrilling gaming adventures. I find fulfillment in this vibrant blend of outdoor exploration and virtual quests.</p>
                     <p>👩‍👩‍👦‍👦 When I step away from the tech realm, I prioritize cherished moments with family and friends, nurturing these connections and crafting meaningful memories. My passion for aiding others and eagerness for collaboration make me an enthusiastic partner in the dynamic tech landscape. Feel free to reach out if you're seeking a dedicated collaborator. 🤝👨‍💻</p>
                 </div>
+                <br/>
+                <a style={{textAlign:"center", fontSize:"1.3rem"}} className="lets-talk-button"  href='https://www.linkedin.com/in/jjgomezswe/' target="_blank">Lets Talk!</a>
             </div>
         </>
     );
