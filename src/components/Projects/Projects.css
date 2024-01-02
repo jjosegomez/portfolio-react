@@ -64,15 +64,25 @@
     color: #fff;
 }
 
-.project-select > button {
+.select-button {
     font-size: 24px;
     max-width: 200px;
     width: fit-content;
-    background-color: #fff;
-    color: #005400;
-    border: solid 5px #005400;
+    background-color: #005400;
+    color: #fff;
+    border: #005400;
+    padding: 1rem;
     border-radius: 5px;
     height: fit-content;
+}
+
+.select-arrow {
+    background-color: #fff;
+    border: transparent;
+    font-size: 24px;
+    color: #005400;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 800;
 }
 
 .project-select-menu {
@@ -132,6 +142,6 @@
         margin: .5rem auto;
         border-bottom: solid #005400 2px ;
         padding: 0;
-        border-radius: 5px;
+        border-radius: 2px;
     }
 }

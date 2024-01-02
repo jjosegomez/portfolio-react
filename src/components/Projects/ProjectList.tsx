@@ -47,9 +47,9 @@ const ProjectList: React.FC = () => {
             <div className="project-list-mobile">
             <h1>My Projects</h1>
                 <div className={`project-select ${toggleSelect}`}>
-                    <button onClick={handlePrevProject}>&lt;</button>
+                    <button className="select-arrow" onClick={handlePrevProject}>&lt;</button>
                     <button className="select-button" onClick={handleSelect}>{selectProjectName}</button>
-                    <button onClick={handleNextProject}>&gt;</button>
+                    <button className="select-arrow" onClick={handleNextProject}>&gt;</button>
                 </div>
                 <div className={`project-select-menu ${toggleSelect}`} >
                     {
