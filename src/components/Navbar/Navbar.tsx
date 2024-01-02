@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react"
 import "./Navbar.css"
 import linkedInLogo from "../../assets/socials/linkedin-svgrepo-com.svg"
 import githubLogo from "../../assets/socials/github-142-svgrepo-com.svg"
-import emailLogo from "../../assets/socials/telegram-svgrepo-com.svg"
+import resumeLogo from "../../assets/socials/resume-business-cv-work-job-curriculum-2-svgrepo-com.svg"
 
 import { PortfolioContext, PortfolioContextProps } from "../PortfolioContext"
 
@@ -37,11 +37,9 @@ const Navbar: React.FC = () => {
                 <div className="contact">
                     <a href="https://www.linkedin.com/in/jjgomezswe/" ><img src={linkedInLogo} alt="linkedin" /></a>
                     <a href="https://github.com/jjosegomez" ><img src={githubLogo} alt="github" /></a>
-                    <a href="" ><img src={emailLogo} alt="email" /></a>
+                    <a href="https://docs.google.com/document/d/1e39WtsnwBifsmVNcytldUySPRYGdlBdfHojKvtSfboc/edit?usp=sharing" ><img src={resumeLogo} alt="email" /></a>
                 </div>
             </nav>
-
-
 
             <nav className="mobile-nav">
                 <h1 onClick={() => { updateCurrentState(0) }} className="logo">Tech by Juan</h1>
@@ -61,7 +59,7 @@ const Navbar: React.FC = () => {
                     <div className="mobile-contact ">
                         <a href="https://www.linkedin.com/in/jjgomezswe/" ><img src={linkedInLogo} alt="linkedin" /></a>
                         <a href="https://github.com/jjosegomez" ><img src={githubLogo} alt="github" /></a>
-                        <a href="mailto:jjgomezswe@gmail.com?subject=Hey Juan, pretty cool website!&body=How are you doing?"><img src={emailLogo} alt="email" /></a>
+                        <a href="https://docs.google.com/document/d/1e39WtsnwBifsmVNcytldUySPRYGdlBdfHojKvtSfboc/edit?usp=sharing"><img src={resumeLogo} alt="email" /></a>
                     </div>
                 </div>
             </nav>

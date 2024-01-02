@@ -4,13 +4,12 @@ import { ProjectType } from '../../types/ProjectType';
 
 type ProjectProps = {
     project: ProjectType,
-    className: string
 }
 
 
-const Project: React.FC<ProjectProps> = ({ project, className }) => {
+const Project: React.FC<ProjectProps> = ({ project }) => {
     return (
-        <div className={`${className} project`}>
+        <div className={`project-displayed`}>
             <figure style={{ backgroundImage: `url(${project.image})` }}></figure>
             <h2>{project.name}</h2>
             <p>{project.description}</p>

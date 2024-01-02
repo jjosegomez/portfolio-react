@@ -1,3 +1,5 @@
+//data to be rendered in project list section
+
 import { ProjectType } from "../../types/ProjectType";
 
 //skills
