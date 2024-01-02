@@ -4,9 +4,11 @@
     justify-content: space-evenly;
     flex-wrap: wrap-reverse;
     align-items: center;
+    width: 100%;
 }
 
 .hero-text {
+    margin: auto;
     display: flex;
     margin: 2rem;
     max-width: 320px;

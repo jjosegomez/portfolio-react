@@ -25,10 +25,7 @@
 
 .skill:hover {
     text-decoration: none;
-    color: #005400;
-    background: #fff;
-    border: 8px solid #005400;
-    padding: 5px;
+    background-color: rgba(0, 84, 0, .7);
 }
 
 .skill > img {
