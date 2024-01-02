@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react"
 import "./Navbar.css"
 import linkedInLogo from "../../assets/socials/linkedin-svgrepo-com.svg"
 import githubLogo from "../../assets/socials/github-142-svgrepo-com.svg"
-import resumeLogo from "../../assets/socials/resume-business-cv-work-job-curriculum-2-svgrepo-com.svg"
+import resumeLogo from "../../assets/socials/profile-svgrepo-com.svg"
 
 import { PortfolioContext, PortfolioContextProps } from "../PortfolioContext"
 

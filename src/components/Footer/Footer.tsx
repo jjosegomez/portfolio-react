@@ -10,7 +10,7 @@ const Footer: React.FC<FooterProps> = () => {
 
   return (
     <footer>
-      <p>&copy; Tech by Juan 2023</p>
+      <p>&copy; Tech by Juan 2023.</p>
       <p>Last Updated: {lastUpdate}</p>
     </footer>
   );

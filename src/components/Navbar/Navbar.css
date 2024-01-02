@@ -1,10 +1,14 @@
 .desktop-nav {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    width: 100%;
+    width: 90%;
     border-bottom: solid 3px green;
+    z-index: 200;
 }
 
 .links {
@@ -51,11 +55,14 @@
 }
 
 .mobile-nav {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
     display: none;
     justify-content: space-between;
     align-items: center;
     height: max-content;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     padding: 0 1rem;
     border-bottom: solid 3px green;
