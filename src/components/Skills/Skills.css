@@ -51,6 +51,7 @@
     width: 100vw;
     background-color: #005400;
     opacity: .95;
+    z-index: 1000;
 }
 
 .modal-text {
