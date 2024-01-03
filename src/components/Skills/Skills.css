@@ -24,8 +24,7 @@
 }
 
 .skill:hover {
-    text-decoration: none;
-    background-color: rgba(0, 84, 0, .7);
+    cursor: pointer;
 }
 
 .skill > img {
