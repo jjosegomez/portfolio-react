@@ -61,13 +61,14 @@
 }
 
 .modal-text>h2 {
-    font-size: 80px;
+    font-size: 70px;
     text-align: center;
     margin: 1rem;
+    line-height: 68px;
 }
 
 .modal-text > p {
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     margin: 2.5rem 0 3rem;
 }

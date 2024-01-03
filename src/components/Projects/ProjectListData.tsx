@@ -5,15 +5,15 @@ import { ProjectType } from "../../types/ProjectType";
 //skills
 // import cppLogo from "../../assets/skills/cpp.svg"
 import reactLogo from "../../assets/skills/React-icon.svg"
-// import htmlLogo from "../../assets/skills/html.svg"
-// import cssLogo from "../../assets/skills/css.svg"
+import htmlLogo from "../../assets/skills/html.svg"
+import cssLogo from "../../assets/skills/css.svg"
 import jsLogo from "../../assets/skills/javascript.svg"
 import typescriptLogo from "../../assets/skills/typescript.svg"
 import nodeLogo from "../../assets/skills/nodejs.svg"
 import expressLogo from "../../assets/skills/express.svg"
 import mongodbLogo from "../../assets/skills/mongodb.svg"
 import pythonLogo from "../../assets/skills/python-icon.svg"
-// import gitLogo from "../../assets/skills/git.svg"
+import gitLogo from "../../assets/skills/git.svg"
 import swiftLogo from "../../assets/skills/swift-icon.svg"
 
 //projects
@@ -38,19 +38,19 @@ export const projectListData: ProjectType[] = [
             {
                 name: "TypeScript",
                 img: typescriptLogo,
-                description: "Used for application logic."
+                description: "Utilized in Teach-A-Bull for implementing application logic. TypeScript's strong typing system ensures robustness and scalability in the codebase."
             },
             {
                 name: "React",
                 img: reactLogo,
-                description: "Utilized for dynamic front-end."
+                description: "Used extensively in Teach-A-Bull for building dynamic front-end interfaces. React's declarative approach simplifies UI development, enhancing user experience."
             },
             {
                 name: "Django",
                 img: "",
-                description: "High-level Python web framework."
+                description: "Employed as the primary framework in Teach-A-Bull for constructing robust back-end functionalities. Django's rapid development and built-in security features ensure a stable server-side environment."
             }
-        ]
+        ]        
     },
     {
         image: pacmanImg,
@@ -60,9 +60,9 @@ export const projectListData: ProjectType[] = [
             {
                 name: "Python",
                 img: pythonLogo,
-                description: "Utilized for game development and AI implementation."
+                description: "Utilized for game development and AI implementation in Pac-Man Project. Python's simplicity and extensive libraries facilitate AI learning and game mechanics."
             }
-        ]
+        ]        
     },
     {
         image: firstlandImg,
@@ -72,24 +72,25 @@ export const projectListData: ProjectType[] = [
             {
                 name: "MongoDB",
                 img: mongodbLogo,
-                description: "NoSQL database used for data storage."
+                description: "Used in FirstLand as a NoSQL database for efficient and flexible data storage, accommodating diverse user-related information."
             },
             {
                 name: "Express.js",
                 img: expressLogo,
-                description: "Web application framework for Node.js."
+                description: "Integrated as a web application framework for Node.js in FirstLand, simplifying routing and middleware creation."
             },
             {
                 name: "React",
                 img: reactLogo,
-                description: "Utilized for front-end development."
+                description: "Utilized in FirstLand for building engaging front-end interfaces through its component-based structure and efficient rendering."
             },
             {
                 name: "Node.js",
                 img: nodeLogo,
-                description: "JavaScript runtime for server-side development."
+                description: "Used as a JavaScript runtime in FirstLand, enabling server-side development with a unified language (JavaScript)."
             }
         ]
+        
     },
     {
         image: supremebotImg,
@@ -99,12 +100,12 @@ export const projectListData: ProjectType[] = [
             {
                 name: "Selenium",
                 img: "",
-                description: "Used for web automation."
+                description: "Utilized for web automation in SupremeBot, facilitating navigation and interaction with web elements for tasks like web scraping and automated actions."
             },
             {
                 name: "Python",
                 img: pythonLogo,
-                description: "Utilized for scripting and automation."
+                description: "Chosen for scripting and automation in SupremeBot due to its simplicity and extensive libraries, complementing Selenium's functionalities."
             }
         ]
     },
@@ -116,14 +117,14 @@ export const projectListData: ProjectType[] = [
             {
                 name: "JavaScript",
                 img: jsLogo,
-                description: "Used for scripting and web interactions."
+                description: "Utilized for scripting and web interactions in Automated Birthday Message for Clients, offering flexibility for web element interactions."
             },
             {
                 name: "Twilio",
                 img: "",
-                description: "API used for sending SMS messages."
+                description: "Integrated Twilio API for sending personalized SMS messages, enhancing client engagement and professional relationships."
             }
-        ]
+        ]        
     },
     {
         image: instagramImg,
@@ -133,19 +134,19 @@ export const projectListData: ProjectType[] = [
             {
                 name: "Swift",
                 img: swiftLogo,
-                description: "Utilized for iOS app development."
+                description: "Utilized for iOS app development in Instagram Clone, leveraging its power and native capabilities for a seamless mobile experience."
             },
             {
                 name: "Back4App",
                 img: "",
-                description: "Parse server used for backend."
+                description: "Integrated Back4App parse server as the backend for Instagram Clone, providing scalable cloud hosting and real-time database capabilities."
             },
             {
                 name: "XCode",
                 img: "",
-                description: "Integrated development environment for Swift."
+                description: "Used as the integrated development environment (IDE) for Swift in Instagram Clone, facilitating app development."
             }
-        ]
+        ]        
     },
     {
         image: twitterImg,
@@ -155,19 +156,19 @@ export const projectListData: ProjectType[] = [
             {
                 name: "Twitter API",
                 img: "",
-                description: "API used for Twitter functionalities."
+                description: "Integrated Twitter API for replicating functionalities and UI elements of the original Twitter platform, providing additional sandbox for features in Twitter Clone."
             },
             {
                 name: "Swift",
                 img: swiftLogo,
-                description: "Utilized for iOS app development."
+                description: "Utilized for iOS app development in Twitter Clone, ensuring a native and efficient user experience."
             },
             {
                 name: "XCode",
                 img: "",
-                description: "Integrated development environment for Swift."
+                description: "Used as the integrated development environment (IDE) for Swift in Twitter Clone, facilitating app development."
             }
-        ]
+        ]        
     },
     {
         image: technicalAnalysisImg,
@@ -177,14 +178,14 @@ export const projectListData: ProjectType[] = [
             {
                 name: "C#",
                 img: "",
-                description: "Utilized for application development."
+                description: "Chosen for application development in Technical Analysis Application, leveraging its robust framework and extensive libraries."
             },
             {
                 name: ".Net",
                 img: "",
-                description: ".NET framework for application development."
+                description: "Utilized .NET framework in Technical Analysis Application, providing tools for efficient file analysis and data visualization."
             }
-        ]
+        ]        
     },
     {
         image: FacialRecognitionImg,
@@ -194,34 +195,34 @@ export const projectListData: ProjectType[] = [
             {
                 name: "Support Vector Machines (SVM)",
                 img: "",
-                description: "Machine learning algorithm used for classification."
+                description: "Employed SVM as a machine learning algorithm in Facial Recognition for classification based on facial features."
             },
             {
                 name: "K-Nearest Neighbors (KNN)",
                 img: "",
-                description: "Machine learning algorithm used for classification."
+                description: "Utilized KNN as a machine learning algorithm in Facial Recognition for classification based on proximity in feature space."
             },
             {
                 name: "Principal Component Analysis (PCA)",
                 img: "",
-                description: "Dimensionality reduction technique."
+                description: "Applied PCA as a dimensionality reduction technique in Facial Recognition for reducing data complexity and extracting meaningful facial features."
             },
             {
                 name: "Linear Discriminant Analysis (LDA)",
                 img: "",
-                description: "Dimensionality reduction and feature extraction."
+                description: "Utilized LDA in Facial Recognition for dimensionality reduction and feature extraction, enhancing facial recognition accuracy."
             },
             {
                 name: "Dimensionality Reduction and Feature Extraction",
                 img: "",
-                description: "Techniques for reducing data complexity and extracting meaningful features."
+                description: "Employed techniques for reducing data complexity and extracting meaningful features, crucial for accurate facial recognition."
             },
             {
                 name: "Python",
                 img: pythonLogo,
-                description: "Utilized for scripting and automation."
+                description: "Used for scripting and automation in Facial Recognition, alongside machine learning libraries essential for model development and evaluation."
             }
-        ]
+        ]        
     },
     {
         image: comingsoon,
@@ -231,23 +232,23 @@ export const projectListData: ProjectType[] = [
             {
                 name: "TypeScript",
                 img: typescriptLogo,
-                description: "Used for application logic."
+                description: "Utilized in Your LifeCoach for implementing application logic. TypeScript ensures code robustness and scalability."
             },
             {
                 name: "React",
                 img: reactLogo,
-                description: "Utilized for dynamic front-end."
+                description: "Used extensively in Your LifeCoach for building dynamic front-end interfaces. React's declarative approach simplifies UI development."
             },
             {
                 name: "Node.js",
                 img: nodeLogo,
-                description: "JavaScript runtime for server-side development."
+                description: "Used as the JavaScript runtime in Your LifeCoach for server-side development, ensuring a unified language environment."
             },
             {
                 name: "MongoDB",
                 img: mongodbLogo,
-                description: "NoSQL database used for data storage."
+                description: "Integrated MongoDB as a NoSQL database in Your LifeCoach, providing efficient data storage for client management and resource organization."
             }
-        ]
+        ]        
     }
 ];
