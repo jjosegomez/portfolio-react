@@ -6,7 +6,7 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = () => {
 
-  const lastUpdate = "January 1st, 2024"
+  const lastUpdate = "January 3rd, 2024"
 
   return (
     <footer>
