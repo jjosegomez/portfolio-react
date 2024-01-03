@@ -27,15 +27,17 @@
 
 .experience-block-img {
     width: 38%;
-    min-width: 320px;
+    min-width: 300px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 10px 0 0;
+    min-height: 250px;
 }
 
 .experience-block-text {
     width: 60%;
+    min-width: 300px;
 }
 
 .experience-block-text > h2 {
@@ -45,7 +47,6 @@
 }
 
 .experience-block-text > h3 {
-    
     font-size: 30px;
     margin: 0 1rem;
     padding: 1rem 0 0;
@@ -55,7 +56,6 @@
     margin: auto;
     font-size: 20px;
     max-width: 700px;
-    text-align: justify;
     padding: 1rem;
 }
 
@@ -78,4 +78,22 @@
     color: white;
     width: 80px;
     border-radius: 50px;
+}
+
+@media screen and (max-width: 820px) {
+
+    .experience-block-text > h2 {
+        font-size: 3rem;
+        margin: 2rem 1rem ;
+    }
+
+    .experience-block-text > h3 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1.1rem;
+    }
+
+
 }
