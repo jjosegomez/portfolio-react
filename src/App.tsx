@@ -29,6 +29,11 @@ function App() {
     }
   },[currentState])
 
+  // Scroll to the top of the page when currentContent changes
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentContent]);
+
   return (
     <>
       <Navbar />
