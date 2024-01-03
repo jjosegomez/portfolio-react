@@ -90,12 +90,12 @@
     text-align: center;
     display: block;
     overflow: hidden;
+    transition: .3s;
 }
 
 .project-select-menu.hidden{
     height: 0;
     background-color:#fff;
-    transition: .3s;
 }
 
 .project-select-menu.visible{
