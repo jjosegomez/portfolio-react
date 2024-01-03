@@ -30,11 +30,13 @@ function App() {
   },[currentState])
 
   return (
+    <>
+      <Navbar />
       <div className='App'>
-        <Navbar />
         {currentContent}
         <Footer/>
       </div>
+    </>
   );
 }
 

@@ -17,12 +17,16 @@ import pythonLogo from "../../assets/skills/python-icon.svg"
 import swiftLogo from "../../assets/skills/swift-icon.svg"
 
 //projects
+import supremebotImg from "../../assets/projects/supremebot.png"
 import FacialRecognitionImg from "../../assets/projects/facial-recognition.gif";
 import teachABullImg from "../../assets/projects/teachabull.gif";
 import technicalAnalysisImg from "../../assets/projects/technical-analysis.gif";
 import instagramImg from "../../assets/projects/instagram.gif";
 import twitterImg from "../../assets/projects/twitter.gif";
 import pacmanImg from "../../assets/projects/pacman.gif";
+import firstlandImg from "../../assets/projects/firstland.png"
+
+import comingsoon from "../../assets/projects/coming-soon.svg"
 
 
 export const projectListData: ProjectType[] = [
@@ -61,7 +65,7 @@ export const projectListData: ProjectType[] = [
         ]
     },
     {
-        image: "",
+        image: firstlandImg,
         name: "FirstLand",
         description: "A comprehensive Web App and AI Assistant designed to enhance user engagement through intuitive interfaces and automation. Utilizes the MERN stack for a full-cycle development, integrating MongoDB, Express.js, React, and Node.js for a seamless user experience from front to back end.",
         skills: [
@@ -88,7 +92,7 @@ export const projectListData: ProjectType[] = [
         ]
     },
     {
-        image: "",
+        image: supremebotImg,
         name: "SupremeBot",
         description: "An automated bot specialized for e-commerce and data collection through web scraping. Built with Selenium and Python, it navigates and interacts with web pages to automate tasks, collect data, or purchase items quickly, catering to both consumer and business needs.",
         skills: [
@@ -105,7 +109,7 @@ export const projectListData: ProjectType[] = [
         ]
     },
     {
-        image: "",
+        image: comingsoon,
         name: "Automated Birthday Message for Clients",
         description: "A targeted solution for enhancing client engagement by automating birthday messages. Utilizes JavaScript for scripting and Twilio API for sending SMS, ensuring a personal touch in professional relationships and increasing client retention.",
         skills: [
@@ -220,7 +224,7 @@ export const projectListData: ProjectType[] = [
         ]
     },
     {
-        image: "",
+        image: comingsoon,
         name: "Your LifeCoach",
         description: "An interactive website designed for life coaches to manage case studies, schedule appointments, and handle client traffic efficiently. Combining TypeScript, React, Node.js, and MongoDB, it offers a comprehensive solution for client management, appointment scheduling, and resource organization.",
         skills: [

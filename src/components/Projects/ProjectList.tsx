@@ -19,17 +19,25 @@ const ProjectList: React.FC = () => {
     }
 
     const handleNextProject = () => {
-        if (currentIdx < projectListData.length-1) {
-            setCurrentIdx(currentIdx + 1)
+        if (currentIdx < projectListData.length - 1) {
+            setCurrentIdx(currentIdx + 1);
+        } else {
+            // If at the end, loop back to the first item
+            setCurrentIdx(0);
         }
-        console.log(currentIdx)
-    }
+        console.log(currentIdx);
+    };
+
+    
     const handlePrevProject = () => {
         if (currentIdx > 0) {
-            setCurrentIdx(currentIdx - 1)
+            setCurrentIdx(currentIdx - 1);
+        } else {
+            // If at the first, loop back to the last item
+            setCurrentIdx(projectListData.length - 1);
         }
-        console.log(selectProjectName)
-    }
+        console.log(selectProjectName);
+    };
 
     useEffect( () => {setSelectProjectName(projectListData[currentIdx].name)} ,[currentIdx])
 
