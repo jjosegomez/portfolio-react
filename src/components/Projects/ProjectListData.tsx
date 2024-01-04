@@ -5,15 +5,15 @@ import { ProjectType } from "../../types/ProjectType";
 //skills
 // import cppLogo from "../../assets/skills/cpp.svg"
 import reactLogo from "../../assets/skills/React-icon.svg"
-import htmlLogo from "../../assets/skills/html.svg"
-import cssLogo from "../../assets/skills/css.svg"
+// import htmlLogo from "../../assets/skills/html.svg"
+// import cssLogo from "../../assets/skills/css.svg"
 import jsLogo from "../../assets/skills/javascript.svg"
 import typescriptLogo from "../../assets/skills/typescript.svg"
 import nodeLogo from "../../assets/skills/nodejs.svg"
 import expressLogo from "../../assets/skills/express.svg"
 import mongodbLogo from "../../assets/skills/mongodb.svg"
 import pythonLogo from "../../assets/skills/python-icon.svg"
-import gitLogo from "../../assets/skills/git.svg"
+// import gitLogo from "../../assets/skills/git.svg"
 import swiftLogo from "../../assets/skills/swift-icon.svg"
 
 //projects
