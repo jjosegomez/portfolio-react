@@ -6,11 +6,9 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = () => {
 
-  const lastUpdate = "January 3rd, 2024"
-
   return (
     <footer>
-      <p>Last Updated: {lastUpdate}</p>
+      <p>Last Updated: <time dateTime='2024-01-04'>January 4th, 2024</time></p>
       <p>&copy; Tech by Juan 2023.</p>
     </footer>
   );
