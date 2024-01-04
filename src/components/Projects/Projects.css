@@ -102,6 +102,10 @@
     height: 370px;
 }
 
+.project-technologies {
+    display: flex;
+    width: 100%;
+}
 
 @media screen and (max-width: 820px) {
 

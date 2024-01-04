@@ -4,17 +4,33 @@ import { ProjectType } from "../../types/ProjectType";
 
 //skills
 // import cppLogo from "../../assets/skills/cpp.svg"
-import reactLogo from "../../assets/skills/React-icon.svg"
 // import htmlLogo from "../../assets/skills/html.svg"
-// import cssLogo from "../../assets/skills/css.svg"
+import cssLogo from "../../assets/skills/css.svg"
+import gitLogo from "../../assets/skills/git.svg"
+import reactLogo from "../../assets/skills/React-icon.svg"
 import jsLogo from "../../assets/skills/javascript.svg"
 import typescriptLogo from "../../assets/skills/typescript.svg"
 import nodeLogo from "../../assets/skills/nodejs.svg"
 import expressLogo from "../../assets/skills/express.svg"
 import mongodbLogo from "../../assets/skills/mongodb.svg"
 import pythonLogo from "../../assets/skills/python-icon.svg"
-// import gitLogo from "../../assets/skills/git.svg"
 import swiftLogo from "../../assets/skills/swift-icon.svg"
+import djangoLogo from "../../assets/skills/django.svg"
+import seleniumLogo from "../../assets/skills/Selenium_Logo.png"
+import twilioLogo from "../../assets/skills/twilio.svg"
+import back4appLogo from "../../assets/skills/back4app.jpeg"
+import xcodeLogo from "../../assets/skills/xcode.png"
+import twitterLogo from "../../assets/skills/twitter-3.svg"
+import csharpLogo from "../../assets/skills/c--4.svg"
+import netLogo from "../../assets/skills/netframework-1.svg"
+import svmLgo from "../../assets/skills/svm.jpg"
+import knnLogo from "../../assets/skills/knn.png"
+import pcaLogo from "../../assets/skills/pca.png"
+import ldaLogo from "../../assets/skills/lda.jpeg"
+import featureExtractionLogo from "../../assets/skills/feature-extraction.png"
+import openAiLogo from "../../assets/skills/openai-2.svg"
+import visualStudioLogo from "../../assets/skills/vscode.jpeg"
+
 
 //projects
 import supremebotImg from "../../assets/projects/supremebot.png"
@@ -47,11 +63,31 @@ export const projectListData: ProjectType[] = [
             },
             {
                 name: "Django",
-                img: "",
+                img: djangoLogo,
                 description: "Employed as the primary framework in Teach-A-Bull for constructing robust back-end functionalities. Django's rapid development and built-in security features ensure a stable server-side environment."
+            },
+            {
+                name: "Python",
+                img: pythonLogo,
+                description: "Utilized in Teach-A-Bull for implementing AI and NLP capabilities. Python's extensive libraries, particularly NLP models, power personalized tutoring services by adapting to diverse learning styles and enabling interactive problem-solving sessions."
+            },
+            {
+                name: "OpenAI",
+                img: openAiLogo,
+                description: "Integrated OpenAI within Teach-A-Bull for limited information retrieval. The OpenAI API was specifically used for retrieving information to enhance the learning experience, while other AI and NLP functionalities were implemented through Python's extensive libraries."
+            },
+            {
+                name: "Git",
+                img: gitLogo,
+                description: "Utilized Git as the version control system in Teach-A-Bull for collaborative development. Git enabled efficient tracking of changes, facilitating seamless collaboration among team members working on the project."
+            },
+            {
+                name: "CSS",
+                img: cssLogo,
+                description: "Used CSS extensively in Teach-A-Bull for styling and layout purposes. CSS empowered the design and visual presentation of the web application, ensuring a user-friendly and aesthetically pleasing interface."
             }
         ]        
-    },
+    },    
     {
         image: pacmanImg,
         name: "Pac-Man Project",
@@ -67,12 +103,12 @@ export const projectListData: ProjectType[] = [
     {
         image: firstlandImg,
         name: "FirstLand",
-        description: "A comprehensive Web App and AI Assistant designed to enhance user engagement through intuitive interfaces and automation. Utilizes the MERN stack for a full-cycle development, integrating MongoDB, Express.js, React, and Node.js for a seamless user experience from front to back end.",
+        description: "A comprehensive real estate platform and RealtorAI assistant powered by GPT-4, designed to enhance user engagement through intuitive interfaces and automation. Utilizes the MERN stack for a full-cycle development, integrating MongoDB, Express.js, React, and Node.js for a seamless user experience from front to back end.",
         skills: [
             {
                 name: "MongoDB",
                 img: mongodbLogo,
-                description: "Used in FirstLand as a NoSQL database for efficient and flexible data storage, accommodating diverse user-related information."
+                description: "Used in FirstLand as a NoSQL database for efficient and flexible data storage, accommodating diverse real estate-related information."
             },
             {
                 name: "Express.js",
@@ -88,9 +124,18 @@ export const projectListData: ProjectType[] = [
                 name: "Node.js",
                 img: nodeLogo,
                 description: "Used as a JavaScript runtime in FirstLand, enabling server-side development with a unified language (JavaScript)."
+            },
+            {
+                name: "Git",
+                img: gitLogo,
+                description: "Utilized Git as the version control system in FirstLand for efficient team collaboration, enabling version tracking and code management."
+            },
+            {
+                name: "GPT-4",
+                img: openAiLogo,
+                description: "Powered by OpenAi's GPT-4, FirstLand incorporates an AI assistant for realtors. GPT-4 enhances user interaction and engagement by providing sophisticated conversational experiences and real-time assistance."
             }
-        ]
-        
+        ]       
     },
     {
         image: supremebotImg,
@@ -99,7 +144,7 @@ export const projectListData: ProjectType[] = [
         skills: [
             {
                 name: "Selenium",
-                img: "",
+                img: seleniumLogo,
                 description: "Utilized for web automation in SupremeBot, facilitating navigation and interaction with web elements for tasks like web scraping and automated actions."
             },
             {
@@ -111,7 +156,7 @@ export const projectListData: ProjectType[] = [
     },
     {
         image: comingsoon,
-        name: "Automated Birthday Message for Clients",
+        name: "Automated Birthday Messaging",
         description: "A targeted solution for enhancing client engagement by automating birthday messages. Utilizes JavaScript for scripting and Twilio API for sending SMS, ensuring a personal touch in professional relationships and increasing client retention.",
         skills: [
             {
@@ -121,7 +166,7 @@ export const projectListData: ProjectType[] = [
             },
             {
                 name: "Twilio",
-                img: "",
+                img: twilioLogo,
                 description: "Integrated Twilio API for sending personalized SMS messages, enhancing client engagement and professional relationships."
             }
         ]        
@@ -138,12 +183,12 @@ export const projectListData: ProjectType[] = [
             },
             {
                 name: "Back4App",
-                img: "",
+                img: back4appLogo,
                 description: "Integrated Back4App parse server as the backend for Instagram Clone, providing scalable cloud hosting and real-time database capabilities."
             },
             {
                 name: "XCode",
-                img: "",
+                img: xcodeLogo,
                 description: "Used as the integrated development environment (IDE) for Swift in Instagram Clone, facilitating app development."
             }
         ]        
@@ -155,7 +200,7 @@ export const projectListData: ProjectType[] = [
         skills: [
             {
                 name: "Twitter API",
-                img: "",
+                img: twitterLogo,
                 description: "Integrated Twitter API for replicating functionalities and UI elements of the original Twitter platform, providing additional sandbox for features in Twitter Clone."
             },
             {
@@ -165,7 +210,7 @@ export const projectListData: ProjectType[] = [
             },
             {
                 name: "XCode",
-                img: "",
+                img: xcodeLogo,
                 description: "Used as the integrated development environment (IDE) for Swift in Twitter Clone, facilitating app development."
             }
         ]        
@@ -177,16 +222,21 @@ export const projectListData: ProjectType[] = [
         skills: [
             {
                 name: "C#",
-                img: "",
+                img: csharpLogo,
                 description: "Chosen for application development in Technical Analysis Application, leveraging its robust framework and extensive libraries."
             },
             {
                 name: ".Net",
-                img: "",
+                img: netLogo,
                 description: "Utilized .NET framework in Technical Analysis Application, providing tools for efficient file analysis and data visualization."
+            },
+            {
+                name: "Microsoft Visual Studio",
+                img: visualStudioLogo,
+                description: "Utilized Microsoft Visual Studio as the primary integrated development environment (IDE) for developing the Technical Analysis Application. Visual Studio provided comprehensive tools and features for efficient C# and .NET development, aiding in code writing, debugging, and project management."
             }
         ]        
-    },
+    },    
     {
         image: FacialRecognitionImg,
         name: "Facial Recognition",
@@ -194,27 +244,27 @@ export const projectListData: ProjectType[] = [
         skills: [
             {
                 name: "Support Vector Machines (SVM)",
-                img: "",
+                img: svmLgo,
                 description: "Employed SVM as a machine learning algorithm in Facial Recognition for classification based on facial features."
             },
             {
                 name: "K-Nearest Neighbors (KNN)",
-                img: "",
+                img: knnLogo,
                 description: "Utilized KNN as a machine learning algorithm in Facial Recognition for classification based on proximity in feature space."
             },
             {
                 name: "Principal Component Analysis (PCA)",
-                img: "",
+                img: pcaLogo,
                 description: "Applied PCA as a dimensionality reduction technique in Facial Recognition for reducing data complexity and extracting meaningful facial features."
             },
             {
                 name: "Linear Discriminant Analysis (LDA)",
-                img: "",
+                img: ldaLogo,
                 description: "Utilized LDA in Facial Recognition for dimensionality reduction and feature extraction, enhancing facial recognition accuracy."
             },
             {
                 name: "Dimensionality Reduction and Feature Extraction",
-                img: "",
+                img: featureExtractionLogo,
                 description: "Employed techniques for reducing data complexity and extracting meaningful features, crucial for accurate facial recognition."
             },
             {
