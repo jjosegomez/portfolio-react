@@ -51,6 +51,7 @@ const ProjectList: React.FC = () => {
                     ))
                 }
             </div>
+            <div className="project-desktop"><Project project={projectListData[currentIdx]} /></div>
 
             <div className="project-list-mobile">
             <h1>My Projects</h1>
@@ -66,9 +67,9 @@ const ProjectList: React.FC = () => {
                         ))
                     }
                 </div>
-            </div>
 
             <Project project={projectListData[currentIdx]} />
+            </div>
         </div>
     )
 }
