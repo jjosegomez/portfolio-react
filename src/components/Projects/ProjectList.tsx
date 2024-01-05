@@ -28,7 +28,7 @@ const ProjectList: React.FC = () => {
         console.log(currentIdx);
     };
 
-    
+
     const handlePrevProject = () => {
         if (currentIdx > 0) {
             setCurrentIdx(currentIdx - 1);
@@ -39,22 +39,23 @@ const ProjectList: React.FC = () => {
         console.log(selectProjectName);
     };
 
-    useEffect( () => {setSelectProjectName(projectListData[currentIdx].name)} ,[currentIdx])
+    useEffect(() => { setSelectProjectName(projectListData[currentIdx].name) }, [currentIdx])
 
     return (
         <div className="project-container">
             <div className="project-list-desktop">
-            <h1>My Projects</h1>
+                <h1>My Projects</h1>
                 {
                     projectListData.map((project, index) => (
                         <a className="project-name" onClick={() => { setCurrentIdx(index) }} key={index}>{project.name}</a> // Use a unique key for each child
-                    ))
-                }
+                        ))
+                    }
             </div>
-            <div className="project-desktop"><Project project={projectListData[currentIdx]} /></div>
-
+            <div className="project-desktop">   
+                <Project project={projectListData[currentIdx]} />
+            </div>
             <div className="project-list-mobile">
-            <h1>My Projects</h1>
+                <h1>My Projects</h1>
                 <div className={`project-select ${toggleSelect}`}>
                     <button className="select-arrow" onClick={handlePrevProject}>&lt;</button>
                     <button className="select-button" onClick={handleSelect}>{selectProjectName}</button>
@@ -68,7 +69,7 @@ const ProjectList: React.FC = () => {
                     }
                 </div>
 
-            <Project project={projectListData[currentIdx]} />
+                <Project project={projectListData[currentIdx]} />
             </div>
         </div>
     )

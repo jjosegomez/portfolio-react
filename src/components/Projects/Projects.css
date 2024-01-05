@@ -1,7 +1,6 @@
 .project-list-desktop  > h1 {
     font-size: 90px;
     line-height: 85px;
-    margin: auto;
 }
 
 .project-container {
@@ -9,12 +8,19 @@
     width: 95%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .project-list-desktop {
     display: flex;
     flex-flow: column;
+    padding-left: 1rem;
+    width: 40%;
+    min-width: 300px;
+}
+
+.project-desktop {
+    width: 60%;
 }
 
 .project-name{
@@ -35,10 +41,9 @@
 }
 
 .project-displayed {
-    width: clamp(320px, 70%, 700px);
+    width: 90%;
     border-radius: 10px;
-    margin: 1rem;
-    padding: 3rem;
+    padding: 3rem 0rem 3rem 3rem;
 }
 
 .project-displayed > figure {
@@ -67,20 +72,21 @@
 
 .select-button {
     font-size: 24px;
-    max-width: 200px;
-    width: fit-content;
+    max-width: 600px;
+    width: 80%;
     background-color: #005400;
     color: #fff;
     border: #005400;
     padding: 1rem;
     border-radius: 5px;
     height: fit-content;
+    margin: 0 1rem;
 }
 
 .select-arrow {
     background-color: #fff;
     border: transparent;
-    font-size: 24px;
+    font-size: 60px;
     color: #005400;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
@@ -91,12 +97,12 @@
     text-align: center;
     display: block;
     overflow: hidden;
+    transition: .3s;
 }
 
 .project-select-menu.hidden{
     height: 0;
     background-color:#fff;
-    transition: .3s;
 }
 
 .project-select-menu.visible{
@@ -129,6 +135,7 @@
     }
 
     .project-displayed > figure {
+        margin-top: 1rem;
         min-height: 300px;
     }
 
