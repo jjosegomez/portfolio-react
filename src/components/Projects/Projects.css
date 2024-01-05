@@ -72,8 +72,9 @@
 
 .select-button {
     font-size: 24px;
+    min-width: 200px;
+    width: 40%;
     max-width: 600px;
-    width: 60%;
     background-color: #005400;
     color: #fff;
     border: #005400;
