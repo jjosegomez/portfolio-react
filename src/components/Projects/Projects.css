@@ -86,6 +86,7 @@
 .select-arrow {
     background-color: #fff;
     border: transparent;
+    width: 50px;
     font-size: 60px;
     color: #005400;
     font-family: 'Courier New', Courier, monospace;
