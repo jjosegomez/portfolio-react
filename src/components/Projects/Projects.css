@@ -91,10 +91,8 @@
     height: 60px;
     font-size: 50px;
     line-height: 10px;
-    color: #fff;
+    color: #005400;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #005400;
-    border-radius: 50%;
 }
 
 .project-select-menu {
