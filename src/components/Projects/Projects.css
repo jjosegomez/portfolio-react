@@ -1,6 +1,7 @@
 .project-list-desktop  > h1 {
     font-size: 90px;
     line-height: 85px;
+    margin: auto;
 }
 
 .project-container {
