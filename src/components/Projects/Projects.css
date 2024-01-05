@@ -73,7 +73,7 @@
 .select-button {
     font-size: 24px;
     max-width: 600px;
-    width: 80%;
+    width: 60%;
     background-color: #005400;
     color: #fff;
     border: #005400;
@@ -86,11 +86,14 @@
 .select-arrow {
     background-color: #fff;
     border: transparent;
-    width: 50px;
-    font-size: 60px;
-    color: #005400;
+    width: 70px;
+    height: 60px;
+    font-size: 50px;
+    line-height: 10px;
+    color: #fff;
     font-family: 'Courier New', Courier, monospace;
-    font-weight: 800;
+    background-color: #005400;
+    border-radius: 50%;
 }
 
 .project-select-menu {
