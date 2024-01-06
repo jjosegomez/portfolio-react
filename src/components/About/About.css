@@ -16,6 +16,11 @@
   border-radius: 8px;
 }
 
+.about-text > p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
 .about-img img {
   filter: contrast(120%) brightness(90%);
   max-width: 100%; /* Prevent the image from exceeding its container's width */

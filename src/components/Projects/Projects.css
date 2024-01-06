@@ -66,35 +66,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1;
     color: #fff;
     max-width: 100vw;
-    overflow: hidden;
+    min-width: 300px;
 }
 
 .select-button {
     font-size: 24px;
     /* min-width: 200px; */
-    width: 40%;
+    width: 50%;
     max-width: 600px;
     background-color: #005400;
     color: #fff;
     border: #005400;
     border-radius: 5px;
     height: fit-content;
-    margin: 0 1rem;
+    margin: 0 .5rem;
     padding: .8rem;
 }
 
 .select-arrow {
     background-color: #fff;
     border: transparent;
-    width: 70px;
+    width: 35px;
     height: 60px;
     font-size: 50px;
     line-height: 10px;
     color: #005400;
     font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
 }
 
 .project-select-menu {
