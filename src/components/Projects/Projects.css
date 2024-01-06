@@ -62,12 +62,11 @@
 }
 
 .project-select {
-    margin: 2rem 1rem .5rem;
+    margin: 0rem 1rem .5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    max-width: 100vw;
     min-width: 300px;
 }
 
