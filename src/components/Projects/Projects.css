@@ -86,13 +86,15 @@
 }
 
 .select-arrow {
+    padding: 0;
+    display: block;
     background-color: #fff;
     border: transparent;
     width: 35px !important;
-    height: 60px;
+    height: 40px;
     text-align: center;
     font-size: 30px;
-    line-height: 10px;
+    line-height: 0px;
     color: #005400;
     font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
