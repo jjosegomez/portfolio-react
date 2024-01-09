@@ -131,7 +131,7 @@ export const projectListData: ProjectType[] = [
                 description: "Utilized Git as the version control system in FirstLand for efficient team collaboration, enabling version tracking and code management."
             },
             {
-                name: "GPT-4",
+                name: "OpenAI",
                 img: openAiLogo,
                 description: "Powered by OpenAi's GPT-4, FirstLand incorporates an AI assistant for realtors. GPT-4 enhances user interaction and engagement by providing sophisticated conversational experiences and real-time assistance."
             }
