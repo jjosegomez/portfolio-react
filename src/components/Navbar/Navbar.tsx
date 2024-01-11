@@ -3,7 +3,7 @@ import "./Navbar.css"
 import linkedInLogo from "../../assets/socials/linkedin-svgrepo-com.svg"
 import githubLogo from "../../assets/socials/github-142-svgrepo-com.svg"
 import resumeLogo from "../../assets/socials/profile-svgrepo-com.svg"
-import { Link } from "react-router-dom"
+import { NavLink, Link } from "react-router-dom"
 
 const Navbar: React.FC = () => {
 
@@ -26,9 +26,9 @@ const Navbar: React.FC = () => {
         <>
             <nav className="desktop-nav">
                 <div className="links">
-                    <Link to="about"><a>About Me</a> </Link>
-                    <Link to="projects"><a>Projects</a> </Link>
-                    <Link to="timeline"><a>Timeline</a> </Link>
+                    <NavLink to="about">About</NavLink>
+                    <NavLink to="projects">Projects</NavLink>
+                    <NavLink to="timeline">Timeline</NavLink>
                 </div>
                 <Link to="/"><h1 className="logo">Tech by Juan</h1></Link>
                 <div className="contact">
@@ -49,11 +49,11 @@ const Navbar: React.FC = () => {
                 <div className={`mobile-menu ${collapse}`}>
                     <Link to="/"><h1 className="logo menu">Tech by Juan</h1></Link>
                     <div className={"mobile-links"}>
-                    <Link to="about"><a>About Me</a> </Link>
-                    <Link to="projects"><a>Projects</a> </Link>
-                    <Link to="timeline"><a>Timeline</a> </Link>
+                    <NavLink to="about">About Me</NavLink>
+                    <NavLink to="projects">Projects</NavLink>
+                    <NavLink to="timeline">Timeline</NavLink>
                     </div>
-                    <div className="mobile-contact ">
+                    <div className="mobile-contact">
                         <a href="https://www.linkedin.com/in/jjgomezswe/" ><img src={linkedInLogo} alt="linkedin" /></a>
                         <a href="https://github.com/jjosegomez" ><img src={githubLogo} alt="github" /></a>
                         <a href="https://docs.google.com/document/d/1e39WtsnwBifsmVNcytldUySPRYGdlBdfHojKvtSfboc/edit?usp=sharing"><img src={resumeLogo} alt="email" /></a>

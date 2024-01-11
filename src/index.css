@@ -21,8 +21,7 @@ a {
 
 a:hover {
   font-weight: 800;
-  text-decoration: underline;
-  transition: all .3s ease-in;
+  transition: .3s;
 }
 
 img {
