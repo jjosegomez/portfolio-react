@@ -22,15 +22,19 @@ const Navbar: React.FC = () => {
         console.log(collapse)
     }
 
+    const scrollUp = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     return (
         <>
             <nav className="desktop-nav">
                 <div className="links">
-                    <NavLink to="about">About</NavLink>
-                    <NavLink to="projects">Projects</NavLink>
-                    <NavLink to="timeline">Timeline</NavLink>
+                    <NavLink to="about" onClick={() => {handleCollapse(); scrollUp()}}>About</NavLink>
+                    <NavLink to="projects" onClick={() => {handleCollapse(); scrollUp()}}>Projects</NavLink>
+                    <NavLink to="timeline" onClick={() => {handleCollapse(); scrollUp()}}>Timeline</NavLink>
                 </div>
-                <Link to="/"><h1 className="logo">Tech by Juan</h1></Link>
+                <Link to="/" onClick={() => {scrollUp()}}><h1 className="logo">Tech by Juan</h1></Link>
                 <div className="contact">
                     <a href="https://www.linkedin.com/in/jjgomezswe/" ><img src={linkedInLogo} alt="linkedin" /></a>
                     <a href="https://github.com/jjosegomez" ><img src={githubLogo} alt="github" /></a>
@@ -39,7 +43,7 @@ const Navbar: React.FC = () => {
             </nav>
 
             <nav className="mobile-nav">
-            <Link to="/"><h1 className="logo">Tech by Juan</h1></Link>
+            <Link to="/" onClick={() => {scrollUp()}}><h1 className="logo">Tech by Juan</h1></Link>
 
                 <div onClick={handleCollapse} className={`hamburger ${hamburger}`} id="hamburger-6">
                     <span className="line"></span>
@@ -47,11 +51,11 @@ const Navbar: React.FC = () => {
                     <span className="line"></span>
                 </div>
                 <div className={`mobile-menu ${collapse}`}>
-                    <Link to="/"><h1 className="logo menu">Tech by Juan</h1></Link>
+                    <Link to="/" onClick={() => {scrollUp()}}><h1 className="logo menu">Tech by Juan</h1></Link>
                     <div className={"mobile-links"}>
-                    <NavLink to="about">About Me</NavLink>
-                    <NavLink to="projects">Projects</NavLink>
-                    <NavLink to="timeline">Timeline</NavLink>
+                    <NavLink to="about" onClick={() => {handleCollapse(); scrollUp()}}>About Me</NavLink>
+                    <NavLink to="projects" onClick={() => {handleCollapse(); scrollUp()}}>Projects</NavLink>
+                    <NavLink to="timeline" onClick={() => {handleCollapse(); scrollUp()}}>Timeline</NavLink>
                     </div>
                     <div className="mobile-contact">
                         <a href="https://www.linkedin.com/in/jjgomezswe/" ><img src={linkedInLogo} alt="linkedin" /></a>
