@@ -1,5 +1,5 @@
 :root {
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.5;
   font-weight: 400;
   color: #005400;
@@ -15,14 +15,16 @@ a {
   font-weight: 500;
   color: #005400;
   text-decoration: none;
-  transition: .3s;
+  transition: all .3s ease-in;
   cursor: pointer;
 }
 
 a:hover {
   font-weight: 800;
   text-decoration: underline;
+  transition: all .3s ease-in;
 }
+
 img {
   width: 100%;
   user-select: none;
