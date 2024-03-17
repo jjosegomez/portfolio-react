@@ -7,7 +7,7 @@ const Hero = () => {
             <div className="hero-text">
                 <h1>Juan Gomez</h1>
                 <div className="subtitle">
-                    <h2>Computer Science Graduate</h2>
+                    <h2>Software Engineer at Medtronic</h2>
                     <h4>University of South Florida</h4>
                 </div>
                 <span>Innovative thinker and passionate coder ready to tackle the tech world. Specializing in Artificial Intelligence and Web Development. Dedicated to creating meaningful solutions through technology.</span>
