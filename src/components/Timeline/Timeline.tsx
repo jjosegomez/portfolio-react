@@ -8,6 +8,7 @@ import codepath from "../../assets/timeline/codepath.jpeg"
 import gdsc from "../../assets/timeline/gdsc.jpeg"
 import eversana from "../../assets/timeline/eversana.png"
 import graduateusf from "../../assets/timeline/graduateusf.png"
+import medtronic from "../../assets/timeline/medtronic.png"
 
 
 type ExperienceBlockProps = {
@@ -67,6 +68,9 @@ const Timeline = () => {
             <ExperienceBlock image={gdsc} title="Tech Lead" company="Google Developer Student Club" description1="Conducted workshops for USF students, covering web development basics and Google technologies, providing participants with hands-on skills and valuable knowledge to excel in their careers" description2="Collaborated closely with the e-board, playing an integral role in planning and executing exclusive projects that enhanced the club's offerings and fostered greater engagement within the student community" description3="Served as a mentor and guide to students, offering support and encouragement in their programming projects, nurturing their growth, and inspiring creative and innovative solutions" />
             <ExperienceBlock image={eversana} title="Software Development Intern" company="Eversana Intouch" description1="Led and executed website updates utilizing HTML, CSS, and JavaScript for live client websites at a consulting firm." description2="Pioneered a collaborative intern project with a team of 8 members, serving as the sole developer. Successfully orchestrated the redesign of the website for enhanced modern aesthetics and user-friendliness." description3="Demonstrated strong multitasking abilities by effectively managing and contributing to about 3 simultaneous projects while actively participating in stand-up meetings and regular project reviews with mentor and manager." />
             <ExperienceBlock image={graduateusf} title="Graduate Computer Science Student" company="University of South Florida" description1="Developed strong problem-solving skills and algorithmic thinking by breaking down complex problems and creating efficient algorithms. Explored data structures and computational thinking." description2="Attained proficiency in programming languages such as Python, Java, and C++, applying theoretical knowledge to real-world software development projects." description3="Gained comprehensive understanding of computer systems, including computer architecture, operating systems, networks, databases, and software engineering principles."
+            />
+            <Time date="2024" />
+            <ExperienceBlock image={medtronic} title="Software Engineer I" company="Medtronic" description1="Lean Sigma Problem Solving certification." description2="(draft)" description3="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
             />
             <Time date="Now" />
         </div>
