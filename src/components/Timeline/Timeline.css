@@ -22,7 +22,7 @@
     min-width: 320px;
     min-height: 500px;
     border-radius: 20px;
-    border: #005400 solid 10px;
+    border: var(--blue) solid 10px;
 }
 
 .experience-block-img {
@@ -68,12 +68,12 @@
     padding: 0;
     height: 60px;
     width: 10px;
-    background-color: #005400;
+    background-color: var(--blue);
 }
 
 .date {
     text-align: center;
-    background-color: #005400;
+    background-color: var(--blue);
     color: white;
     width: 80px;
     border-radius: 50%;

@@ -15,7 +15,7 @@
     max-height: 100px;
     max-width: 200px;
     border-radius: 5px;
-    background-color: #005400;
+    background-color: var(--blue);
     color: #fff;
     padding: 11px;
     transition: .5s;
@@ -46,7 +46,7 @@
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #005400;
+    background-color: var(--blue);
     opacity: .95;
     z-index: 1000;
 }

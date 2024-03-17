@@ -36,7 +36,7 @@
     font-size: 30px;
     font-weight: 800;  
     text-decoration: dotted;
-    border: #005400 solid 5px;
+    border: var(--blue) solid 5px;
     padding: 1rem;
 }
 
@@ -50,7 +50,7 @@
     margin: auto;
     width: 100%;
     min-height: 600px;
-    background-color: rgba(0, 84, 0, .6);
+    background-color: var(--blue);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -76,9 +76,9 @@
     /* min-width: 200px; */
     width: 50%;
     max-width: 600px;
-    background-color: #005400;
+    background-color: var(--blue);
     color: #fff;
-    border: #005400;
+    border: var(--blue);
     border-radius: 5px;
     height: fit-content;
     margin: 0 .5rem;
@@ -96,7 +96,7 @@
     text-align: center;
     font-size: 40px;
     line-height: 0px;
-    color: #005400;
+    color: var(--blue);
     font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
 }
@@ -168,7 +168,7 @@
         display: block;
         font-size: 16px;
         margin: .5rem auto;
-        border-bottom: solid #005400 2px ;
+        border-bottom: solid var(--blue) 2px ;
         padding: 0;
         border-radius: 2px;
         transition: .5s;

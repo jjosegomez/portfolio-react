@@ -9,7 +9,7 @@
     margin: auto;
     width: 90%;
     max-width: 100vw;
-    border-bottom: solid 3px green;
+    border-bottom: solid 3px #141a5c;
     z-index: 200;
 }
 
@@ -32,7 +32,7 @@
 
 .links>a.active {
     font-weight: 800;
-    border-bottom: #005400 solid 2px;
+    border-bottom: var(--blue) solid 2px;
     transition: all .2s ease-in;
 }
 
@@ -88,7 +88,7 @@
 
 .mobile-menu {
     position: absolute;
-    background-color: #005400;
+    background-color: var(--blue);
     margin: auto;
     transition: .3s;
     overflow: hidden;
@@ -116,7 +116,7 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    background-color: #005400;
+    background-color: var(--blue);
 }
 
 .mobile-links>a {
@@ -147,7 +147,7 @@
 .hamburger .line {
     width: 50px;
     height: 5px;
-    background-color: #005400;
+    background-color: var(--blue);
     display: block;
     margin: 8px auto;
     -webkit-transition: all 0.3s ease-in-out;

@@ -2,7 +2,9 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #005400;
+  --green: #005400;
+  --blue: #141a5c;
+  color: var(--blue);
 }
 
 body {
@@ -13,7 +15,7 @@ body {
 a {
   user-select: none;
   font-weight: 500;
-  color: #005400;
+  color: var(--blue);
   text-decoration: none;
   transition: all .3s ease-in;
   cursor: pointer;
@@ -41,9 +43,9 @@ ul {
 
 .lets-talk-button {
   border-radius: 5px;
-  border: 3px solid #005400;
+  border: 3px solid var(--blue);
   background-color: transparent;
-  color: #005400;
+  color: var(--blue);
   margin: 0;
   min-width: 150px;
   padding: 10px;
@@ -55,7 +57,7 @@ ul {
 }
 
 .lets-talk-button:hover {
-  background-color: #005400;
+  background-color: var(--blue);
   color: #fff;
   text-decoration: none;
 }
