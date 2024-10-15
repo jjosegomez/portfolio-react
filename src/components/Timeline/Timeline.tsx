@@ -58,19 +58,73 @@ const Timeline = () => {
         <div className="timeline">
             <h1>My Timeline</h1>
             <Time date="2020" />
-            <ExperienceBlock image={enrolledUsf} title="Enrolled Computer Science Student" company="University of South Florida" description1="Graduated from Hillsborough Community College and eagerly transitioned to pursue a computer science degree at USF." description2="Independently delved into learning HTML, CSS, and JavaScript as a recreational pursuit alongside academic studies." description3="Felt a mix of excitement and apprehension while embarking on the new educational journey, coupled with being honored with a transfer scholarship based on academic excellence." />
+            <ExperienceBlock 
+                image={enrolledUsf} 
+                title="Enrolled Computer Science Student" 
+                company="University of South Florida" 
+                description1="Graduated from Hillsborough Community College and eagerly transitioned to pursue a computer science degree at USF." 
+                description2="Independently delved into learning HTML, CSS, and JavaScript as a recreational pursuit alongside academic studies." 
+                description3="Felt a mix of excitement and apprehension while embarking on the new educational journey, coupled with being honored with a transfer scholarship based on academic excellence." 
+            />
             <Time date="2021" />
-            <ExperienceBlock image={globaltech} title="Student" company="GlobalTech Program at USF" description1="Discovered a passion for programming and technology during the initial year at USF, leading to a desire for further learning."description2="Enrolled in the Global Tech Program at USF, led by an ex-Google engineer, providing an introduction to web development and an opportunity to enhance existing knowledge."description3="Appreciated the program's emphasis on multicultural teamwork, finding it personally fulfilling, and culminating in receiving a certification at the program's completion."/>
-            <ExperienceBlock image={codepath} title="Member" company="CodePath" description1="Expanded tech skills by enrolling in CODEPATH courses, a pivotal organization in my professional development journey."description2="Joined an iOS development program, delving into Swift and Storyboard UI, which turned out to be an immensely rewarding experience."description3="First exposure to APIs occurred during this program, learning how to integrate them into apps for real-time data population, marking a significant learning milestone."/>
+            <ExperienceBlock 
+                image={globaltech} 
+                title="Student" 
+                company="GlobalTech Program at USF" 
+                description1="Discovered a passion for programming and technology during the initial year at USF, leading to a desire for further learning."
+                description2="Enrolled in the Global Tech Program at USF, led by an ex-Google engineer, providing an introduction to web development and an opportunity to enhance existing knowledge."
+                description3="Appreciated the program's emphasis on multicultural teamwork, finding it personally fulfilling, and culminating in receiving a certification at the program's completion."
+            />
+            <ExperienceBlock 
+                image={codepath} 
+                title="Member" 
+                company="CodePath" 
+                description1="Expanded tech skills by enrolling in CODEPATH courses, a pivotal organization in my professional development journey."
+                description2="Joined an iOS development program, delving into Swift and Storyboard UI, which turned out to be an immensely rewarding experience."
+                description3="First exposure to APIs occurred during this program, learning how to integrate them into apps for real-time data population, marking a significant learning milestone."
+            />
             <Time date="2022" />
-            <ExperienceBlock image={microsoft} title="Mentee at Microsoft Mentorship Program" company="Microsoft" description1="Acquired proficiency in Microsoft Technologies, including Power Apps, Power BI, and Power AI, through dedicated learning and practical application." description2="Assisted to workshops on leadership, communication, emotional intelligence, public speaking, teamwork and other topics, supporting enhancing my soft skills and professional development." description3="Collaborated effectively within a small team and actively participated in a Hackathon Project, contributing valuable ideas and technical expertise." />
+            <ExperienceBlock 
+                image={microsoft} 
+                title="Mentee at Microsoft Mentorship Program" 
+                company="Microsoft" 
+                description1="Acquired proficiency in Microsoft Technologies, including Power Apps, Power BI, and Power AI, through dedicated learning and practical application." 
+                description2="Assisted to workshops on leadership, communication, emotional intelligence, public speaking, teamwork and other topics, supporting enhancing my soft skills and professional development." 
+                description3="Collaborated effectively within a small team and actively participated in a Hackathon Project, contributing valuable ideas and technical expertise." 
+            />
             <Time date="2023" />
-            <ExperienceBlock image={gdsc} title="Tech Lead" company="Google Developer Student Club" description1="Conducted workshops for USF students, covering web development basics and Google technologies, providing participants with hands-on skills and valuable knowledge to excel in their careers" description2="Collaborated closely with the e-board, playing an integral role in planning and executing exclusive projects that enhanced the club's offerings and fostered greater engagement within the student community" description3="Served as a mentor and guide to students, offering support and encouragement in their programming projects, nurturing their growth, and inspiring creative and innovative solutions" />
-            <ExperienceBlock image={eversana} title="Software Development Intern" company="Eversana Intouch" description1="Led and executed website updates utilizing HTML, CSS, and JavaScript for live client websites at a consulting firm." description2="Pioneered a collaborative intern project with a team of 8 members, serving as the sole developer. Successfully orchestrated the redesign of the website for enhanced modern aesthetics and user-friendliness." description3="Demonstrated strong multitasking abilities by effectively managing and contributing to about 3 simultaneous projects while actively participating in stand-up meetings and regular project reviews with mentor and manager." />
-            <ExperienceBlock image={graduateusf} title="Graduate Computer Science Student" company="University of South Florida" description1="Developed strong problem-solving skills and algorithmic thinking by breaking down complex problems and creating efficient algorithms. Explored data structures and computational thinking." description2="Attained proficiency in programming languages such as Python, Java, and C++, applying theoretical knowledge to real-world software development projects." description3="Gained comprehensive understanding of computer systems, including computer architecture, operating systems, networks, databases, and software engineering principles."
+            <ExperienceBlock 
+                image={gdsc} 
+                title="Tech Lead" 
+                company="Google Developer Student Club" 
+                description1="Conducted workshops for USF students, covering web development basics and Google technologies, providing participants with hands-on skills and valuable knowledge to excel in their careers" 
+                description2="Collaborated closely with the e-board, playing an integral role in planning and executing exclusive projects that enhanced the club's offerings and fostered greater engagement within the student community" 
+                description3="Served as a mentor and guide to students, offering support and encouragement in their programming projects, nurturing their growth, and inspiring creative and innovative solutions" 
+            />
+            <ExperienceBlock 
+                image={eversana} 
+                title="Software Development Intern" 
+                company="Eversana Intouch" 
+                description1="Led and executed website updates utilizing HTML, CSS, and JavaScript for live client websites at a consulting firm." 
+                description2="Pioneered a collaborative intern project with a team of 8 members, serving as the sole developer. Successfully orchestrated the redesign of the website for enhanced modern aesthetics and user-friendliness." 
+                description3="Demonstrated strong multitasking abilities by effectively managing and contributing to about 3 simultaneous projects while actively participating in stand-up meetings and regular project reviews with mentor and manager." 
+            />
+            <ExperienceBlock 
+                image={graduateusf} 
+                title="Graduate Computer Science Student" 
+                company="University of South Florida" 
+                description1="Developed strong problem-solving skills and algorithmic thinking by breaking down complex problems and creating efficient algorithms. Explored data structures and computational thinking." 
+                description2="Attained proficiency in programming languages such as Python, Java, and C++, applying theoretical knowledge to real-world software development projects." 
+                description3="Gained comprehensive understanding of computer systems, including computer architecture, operating systems, networks, databases, and software engineering principles."
             />
             <Time date="2024" />
-            <ExperienceBlock image={medtronic} title="Software Engineer I" company="Medtronic" description1="Lean Sigma Problem Solving certification." description2="(draft)" description3="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+            <ExperienceBlock 
+                image={medtronic} 
+                title="Software Engineer I" 
+                company="Medtronic" 
+                description1="Engineered full-stack web applications and integrated manufacturing equipment using Python and Ignition; developed a custom OPC UA device module in Java with the Ignition SDK, enabling seamless equipment communication across all connection types and enhancing operational efficiency." 
+                description2="Implemented DevOps and standardized software practices by managing project repositories and optimizing workflows using Git and GitLab CI/CD; promoted agile methodologies and conducted code reviews, enhancing collaboration, reducing development cycles, and decreasing deployment errors." 
+                description3="Led the planning and execution of Development Validation Plans to ensure compliance with Medtronic and FDA quality standards; architected databases with Microsoft SQL Server, applying normalization principles to improve query performance and overall system effectiveness."
             />
             <Time date="Now" />
         </div>
