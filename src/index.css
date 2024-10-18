@@ -1,9 +1,10 @@
 :root {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: helvetica,arial,sans-serif;
   line-height: 1.5;
   font-weight: 400;
   --green: #005400;
-  --blue: #141a5c;
+  --citi-blue: rgb(52, 90, 219);
+  --blue: #170f5f;
   color: var(--blue);
 }
 
