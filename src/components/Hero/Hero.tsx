@@ -8,9 +8,8 @@ const Hero = () => {
                 <h1>Juan Gomez</h1>
                 <div className="subtitle">
                     <h2>Software Engineer at Medtronic</h2>
-                    <h4>University of South Florida</h4>
                 </div>
-                <span>Versatile thinker and passionate coder ready to tackle complex challenges. Specializing in full-stack development. Dedicated to creating impactful solutions through technology and always learning!</span>
+                <span>Dynamic and innovative Software Engineer with expertise in full-stack development and automation. Skilled in crafting seamless user experiences and driving operational efficiency through technologies like the MERN stack, DevOps practices, and database optimization. Dedicated to solving complex challenges and delivering impactful solutions!</span>
                 <a className="lets-talk-button"  href='https://www.linkedin.com/in/jjgomezswe/' target="_blank">Lets Talk!</a>
             </div>
             <div style={{ backgroundImage: `url(${heroImg})` }} className="hero-img tv"></div>
