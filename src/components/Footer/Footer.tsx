@@ -9,7 +9,6 @@ const Footer: React.FC<FooterProps> = () => {
   return (
     <footer>
       <p>Last Updated: <time dateTime='2024-12-04'>Dec 4th, 2024</time></p>
-      <p>&copy; 2023</p>
     </footer>
   );
 };
